@@ -1,0 +1,299 @@
+[gd_scene format=3 uid="uid://hgir5jdf3mxc"]
+
+[ext_resource type="Script" uid="uid://2bmy8e254k6y" path="res://Visual Novel Romance/gd/Interface.gd" id="1_24hth"]
+[ext_resource type="Texture2D" uid="uid://cc4n7xbtxitjm" path="res://Visual Novel Romance/files/fundo-branco-png.png" id="2_24hth"]
+
+[sub_resource type="Theme" id="Theme_limw0"]
+
+[sub_resource type="Theme" id="Theme_dhkvj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q64hd"]
+bg_color = Color(0.4862745, 0.6039216, 0.8784314, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6lq5x"]
+bg_color = Color(0.27450982, 0.4, 0.7058824, 0.8627451)
+corner_radius_top_left = 10
+corner_radius_top_right = 12
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dhkvj"]
+bg_color = Color(0.4862745, 0.5529412, 0.8784314, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q5r4h"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="Theme" id="Theme_q5r4h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a4krr"]
+bg_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_limw0"]
+bg_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u8hxq"]
+bg_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_owux1"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 5.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+corner_detail = 6
+
+[node name="Control" type="Control" unique_id=1581351110]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_24hth")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=859135198]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.0015432099
+anchor_right = 1.0
+anchor_bottom = 1.0030864
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_24hth")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=183654992]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 41.0
+offset_right = 527.0
+offset_bottom = 193.0
+theme = SubResource("Theme_limw0")
+theme_override_colors/font_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+theme_override_font_sizes/font_size = 40
+text = "Dreamlike"
+
+[node name="Buttons" type="VBoxContainer" parent="." unique_id=965881488]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 219.0
+offset_right = 478.0
+offset_bottom = 542.0
+theme_override_constants/separation = 45
+
+[node name="Start" type="Button" parent="Buttons" unique_id=2009143839]
+layout_mode = 2
+theme = SubResource("Theme_dhkvj")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_q64hd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6lq5x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dhkvj")
+text = "Start"
+
+[node name="Load" type="Button" parent="Buttons" unique_id=1421574499]
+layout_mode = 2
+theme = SubResource("Theme_dhkvj")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_q64hd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6lq5x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dhkvj")
+text = "Load
+"
+
+[node name="Preferences" type="Button" parent="Buttons" unique_id=22728520]
+layout_mode = 2
+theme = SubResource("Theme_dhkvj")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_q64hd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6lq5x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dhkvj")
+text = "Preferences
+"
+
+[node name="About" type="Button" parent="Buttons" unique_id=902716562]
+layout_mode = 2
+theme = SubResource("Theme_dhkvj")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_q64hd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6lq5x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dhkvj")
+text = "About
+"
+
+[node name="Quit" type="Button" parent="Buttons" unique_id=1715713705]
+layout_mode = 2
+theme = SubResource("Theme_dhkvj")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_q64hd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6lq5x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dhkvj")
+text = "Quit
+"
+
+[node name="AboutPanel" type="Panel" parent="." unique_id=506628826]
+visible = false
+layout_mode = 0
+offset_left = 528.0
+offset_top = 43.0
+offset_right = 1112.0
+offset_bottom = 603.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_q5r4h")
+
+[node name="Title" type="Label" parent="AboutPanel" unique_id=984421875]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 14.0
+offset_right = 341.0
+offset_bottom = 62.0
+theme_override_colors/font_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+theme_override_font_sizes/font_size = 25
+text = "About"
+
+[node name="Description" type="Label" parent="AboutPanel" unique_id=504045021]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 103.0
+offset_right = 553.0
+offset_bottom = 518.0
+theme_override_colors/font_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+theme_override_font_sizes/font_size = 20
+text = "Description, developer, which game engine
+ was used, game version, participation of x, music, 
+sound 
+effects, voices of y, official channels"
+
+[node name="CloseButton" type="Button" parent="AboutPanel" unique_id=678606773]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 469.0
+offset_right = 282.0
+offset_bottom = 509.0
+theme = SubResource("Theme_q5r4h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_a4krr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_limw0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u8hxq")
+text = "Close"
+
+[node name="PreferencesPanel" type="Panel" parent="." unique_id=1898254970]
+visible = false
+layout_mode = 0
+offset_left = 528.0
+offset_top = 43.0
+offset_right = 1112.0
+offset_bottom = 603.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_q5r4h")
+
+[node name="Title" type="Label" parent="PreferencesPanel" unique_id=1900607971]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 14.0
+offset_right = 341.0
+offset_bottom = 62.0
+theme_override_colors/font_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+theme_override_font_sizes/font_size = 25
+text = "Preferences"
+
+[node name="Description" type="Label" parent="PreferencesPanel" unique_id=1590378693]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 76.0
+offset_right = 553.0
+offset_bottom = 449.0
+theme_override_colors/font_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+theme_override_font_sizes/font_size = 20
+text = "Languages:
+Chinese
+English
+Portuguese
+Spanish"
+
+[node name="Volume" type="Label" parent="PreferencesPanel" unique_id=173568900]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 280.0
+offset_right = 478.0
+offset_bottom = 320.0
+theme_override_colors/font_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+theme_override_font_sizes/font_size = 20
+
+[node name="Text" type="Label" parent="PreferencesPanel" unique_id=1747272981]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 250.0
+offset_right = 478.0
+offset_bottom = 290.0
+theme_override_colors/font_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+theme_override_font_sizes/font_size = 20
+text = "Music volume"
+
+[node name="CloseButton" type="Button" parent="PreferencesPanel" unique_id=29466455]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 469.0
+offset_right = 282.0
+offset_bottom = 509.0
+theme = SubResource("Theme_q5r4h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_a4krr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_limw0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u8hxq")
+text = "Close"
+
+[node name="HSlider" type="HSlider" parent="PreferencesPanel" unique_id=616220571]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 313.0
+offset_right = 393.0
+offset_bottom = 354.0
+theme_override_styles/slider = SubResource("StyleBoxFlat_owux1")
+value = 100.0
+
+[connection signal="pressed" from="Buttons/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Buttons/Load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="Buttons/Preferences" to="." method="_on_preferences_pressed"]
+[connection signal="pressed" from="Buttons/About" to="." method="_on_about_pressed"]
+[connection signal="pressed" from="Buttons/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="AboutPanel/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="PreferencesPanel/CloseButton" to="." method="_on_close_button_pressed"]

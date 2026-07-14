@@ -1,0 +1,303 @@
+import "res://Visual Novel Romance/gd/Intro.gd" as snippets
+
+~ start
+do MusicManager.play_music_for("res://Visual Novel Romance/music/alarm-clock.mp3", 2.0)
+do MusicManager.play_music("res://Visual Novel Romance/music/music1.ogg")
+{{GameData.player_name}}: Ugh... here we go again. Another day at university
+{{GameData.player_name}}: Felix, you came to sleep on top of me again
+{{GameData.player_name}}: Well, how can I start the day?
+
+- Have breakfast
+    => breakfast
+
+- Go back to sleep
+    => sleep_more
+
+~ breakfast
+
+do SaveManager.set_checkpoint("breakfast")
+do GameData.morning_route = "breakfast"
+do SceneController.fade_to_black()
+do SceneController.change_background("res://Visual Novel Romance/files/Blue.png")
+
+You head to the kitchen to prepare your breakfast.
+
+do SceneController.play_video("res://Visual Novel Romance/files/Breakfast_high.ogv")
+
+{{GameData.player_name}}: Nothing could be better than this.
+
+Felix sits on the table beside you, staring at your breakfast as if he hasn't eaten in days.
+
+Despite his dramatic expression, he finished his own meal only a few minutes ago.
+
+After breakfast, you finish getting ready and head to the university.
+
+-- change image --
+
+When you arrive, you meet your friend from the History department.
+
+Gio: Hey, {{GameData.player_name}}. Do you remember my last study about local folklore? I found more information about the stories we used to hear when we were children.
+
+You begin to remember the tales about dreams, where an Oneiric being protects the dreams of children and the world itself, keeping balance between them.
+
+The legend says that when people stop dreaming, the Oneirics lose their strength, leaving humanity vulnerable to the attacks of their greatest nightmares.
+
+Gio: Well, according to the book I'm reading, these stories are ancient and connected to rituals and ancestral temples.
+
+Gio: This book suggests that, if those practices truly worked, people could reach a state where they were able to control their dreams. Dreams could even become a way to understand the present or glimpse the future.
+
+Gio: I'm going to use this book for my research project. What did you think about it?
+
+- Ask more about it
+  => about
+
+- Remember the childhood tales
+  => tales
+
+~ about
+do SaveManager.set_checkpoint("about")
+
+{{GameData.player_name}}: That's incredible. Is this book from the university? I'd love to hear more about your research.
+
+Gio: Actually, I borrowed it from a small chapel not far from here. There are plenty of academic books on the subject, but I wanted firsthand accounts from people who actually lived through those experiences.
+
+Gio: That's what makes this one so fascinating. It was written by a monk who documented his entire journey, from his first encounters with those practices to the day he became a monk himself.
+
+The two of you continue talking until it's time for class.
+
+Once inside the classroom, you struggle to stay awake. After managing to copy a few notes, the lecture finally comes to an end.
+
+As everyone begins to leave, Gio catches up with you.
+
+Gio: Heading home? Want to walk together?
+
+You nod, and the two of you leave the university side by side.
+
+=> work
+
+~ tales
+do SaveManager.set_checkpoint("tales")
+
+{{GameData.player_name}}: So... the stories our parents used to tell us actually came from this folklore?
+
+{{GameData.player_name}}: There were so many of them, but I can barely remember any now.
+
+Gio: That's right. Over time, most people simply forgot them. Even so, many older generations still hold on to those legends.
+
+Gio: We even have festivals and traditions that keep the stories alive, though they're nothing like they used to be.
+
+{{GameData.player_name}}: I loved listening to those stories when I was a kid. But eventually everyone stopped talking about them.
+
+{{GameData.player_name}}: I remember attending ceremonies where people encouraged us to treasure our dreams and never give up on them.
+
+Gio: That's one of the core beliefs behind these traditions.
+
+Gio: Dreams are said to reveal who we truly are... or, sometimes, the parts of ourselves we're trying to hide.
+
+Gio: To stop dreaming, or to stop pursuing your goals, is like turning your back on your own identity.
+
+{{GameData.player_name}}: That's... actually a really interesting way of looking at it.
+
+{{GameData.player_name}}: I'd better get going. My class has probably already started.
+
+Gio: See you around.
+
+You make your way to class, though staying awake proves to be a challenge.
+
+After scribbling down a few notes, the lecture finally ends.
+
+As you're leaving campus, Gio catches up with you.
+
+Gio: Ready to head home?
+
+You agree, and the two of you walk away from the university together.
+
+=> work
+
+
+~ sleep_more
+do SaveManager.set_checkpoint("sleep_more")
+do GameData.morning_route = "sleep"
+{{GameData.player_name}}: Just five more minutes.
+
+do SceneController.sleep_sequence()
+do MusicManager.play_music("res://Visual Novel Romance/music/music1.ogg")
+Some time later...
+
+{{GameData.player_name}}: Wait... What time is it?!
+
+You hurriedly grab the first clothes you can find, only to notice they're covered in Felix's fur. With no time to waste, you throw on a darker outfit to hide it as best as you can.
+
+You rush out of the house and make your way to the university, already running late.
+
+By the time you arrive, class has already begun. You quietly take your seat and start taking notes.
+
+After class, you run into Mary.
+
+Mary: Hey. How have you been?
+
+- Not so well
+  => not_well
+
+- I've been doing alright.
+  => good
+
+~ not_well
+do SaveManager.set_checkpoint("not_well")
+{{GameData.player_name}}: I didn't sleep very well. I accidentally fell back asleep this morning and ended up running late... But enough about me. How have you been?
+
+Mary: I've been really busy lately, but I'm doing well.
+
+{{GameData.player_name}}: I'm glad to hear that. I know how it is. Between classes, research, and assignments, there's always something to do.
+
+=> work
+
+~ good
+
+do SaveManager.set_checkpoint("good")
+
+{{GameData.player_name}}: I've been doing alright, all things considered. You're heading home through Main Avenue, right?
+
+Mary: Yeah. We can walk together if you'd like.
+
+=> work
+
+~ work
+
+The two of you leave campus together, chatting about extracurricular credits, hobbies, and upcoming assignments.
+
+Eventually, you say goodbye and enter a nearby office building.
+
+It's your workplace.
+
+You settle into your desk and spend the next few hours working, occasionally chatting with your coworkers.
+
+After hours of typing, you decide you need a short break, even though it's not lunchtime yet.
+
+- Hide in the restroom and check your phone.
+  => restroom
+
+- Grab a cup of coffee.
+  => coffee
+
+- Take a quick nap.
+  => nap
+
+- Pretend to be working.
+  => pretend
+
+~ restroom
+do SaveManager.set_checkpoint("restroom")
+You spend about fifteen minutes in the restroom scrolling through your phone.
+
+- Message a friend.
+  => message
+
+- Keep scrolling through social media.
+  => feed
+
+~ message
+do SaveManager.set_checkpoint("message")
+if GameData.morning_route == "breakfast":
+
+	do GameData.last_person_texted = "gio"
+	You decide to send Gio a quick message.
+
+	=> after_message
+
+elif GameData.morning_route == "sleep":
+
+	do GameData.last_person_texted = "mary"
+	You decide to send Mary a quick message.
+
+	=> after_message
+
+~ after_message
+do SaveManager.set_checkpoint("after_message")
+You wait for a reply.
+
+Nothing.
+
+With a quiet sigh, you put your phone away and return to work. Before long, your shift comes to an end.
+
+=> go_home
+
+=> END
+
+~ feed
+do SaveManager.set_checkpoint("feed")
+You keep scrolling longer than you intended.
+
+By the time you put your phone away, you feel even more exhausted than before.
+
+You finish your shift almost on autopilot, and before you realize it, you're already standing at your front door.
+
+=> go_home
+
+=> END
+
+~ coffee
+do SaveManager.set_checkpoint("coffe")
+
+%70
+	do GameData.change_health(-5)
+	The coffee is much hotter than expected, and you burn your tongue.
+
+Feeling a little more awake, you return to work and finish the rest of your shift.
+
+=> go_home
+
+%30
+	The coffee tastes surprisingly bitter.
+
+Feeling a little more awake, you return to work and finish the rest of your shift.
+
+=> go_home
+
+%50
+	It's actually a really good cup of coffee.
+
+Feeling a little more awake, you return to work and finish the rest of your shift.
+
+=> go_home
+
+=> END
+
+~ nap
+do SaveManager.set_checkpoint("nap")
+You close your eyes for what feels like only a minute.
+
+When you wake up, a coworker is already complaining that you've been asleep.
+
+You brush it off, finish your work, and head home after your shift.
+
+=> go_home
+
+=> END
+
+~ pretend
+do SaveManager.set_checkpoint("pretend")
+Luckily, you'd already finished most of your work.
+
+The rest of the afternoon is spent looking busy whenever someone walks by.
+
+You even realize you could pretend to finish the same project tomorrow.
+
+Once your shift ends, you head home.
+
+=> go_home
+
+~ go_home
+do SaveManager.set_checkpoint("go_home")
+do SceneController.fade_to_black()
+-- Home animation
+
+=> END
+
+=> END
+
+=> END
+
+=> END
+
+~ END

@@ -1,0 +1,117 @@
+[gd_scene format=3 uid="uid://c4yutgnyx5o10"]
+
+[ext_resource type="Script" uid="uid://xknoge5hngvu" path="res://Visual Novel Romance/gd/Intro.gd" id="1_tegoy"]
+[ext_resource type="Texture2D" uid="uid://cc4n7xbtxitjm" path="res://Visual Novel Romance/files/fundo-branco-png.png" id="2_tegoy"]
+
+[sub_resource type="Theme" id="Theme_a4krr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7a8ye"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s2ta7"]
+bg_color = Color(0.3152687, 0.35539365, 0.8676121, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ayt76"]
+bg_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Intro" type="Control" unique_id=1908978521]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tegoy")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2135466740]
+self_modulate = Color(0.44313726, 0.7294118, 0.99215686, 1)
+custom_maximum_size = Vector2(1150, 650)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1052.0
+offset_bottom = 452.0
+texture = ExtResource("2_tegoy")
+
+[node name="Name" type="TextEdit" parent="." unique_id=1809002562]
+layout_mode = 0
+offset_left = 350.0
+offset_top = 184.0
+offset_right = 713.0
+offset_bottom = 240.0
+theme_override_font_sizes/font_size = 20
+placeholder_text = " Enter your name"
+
+[node name="Label" type="Label" parent="." unique_id=800163083]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 122.0
+offset_right = 645.0
+offset_bottom = 162.0
+theme_override_font_sizes/font_size = 25
+text = "What is your name?"
+
+[node name="Label2" type="Label" parent="." unique_id=1549728879]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 288.0
+offset_right = 682.0
+offset_bottom = 328.0
+theme_override_font_sizes/font_size = 25
+text = "What are your pronouns?"
+
+[node name="Pronoun" type="OptionButton" parent="." unique_id=220334633]
+layout_mode = 0
+offset_left = 347.0
+offset_top = 354.0
+offset_right = 714.0
+offset_bottom = 408.0
+theme_override_font_sizes/font_size = 20
+selected = 0
+item_count = 3
+popup/item_0/text = "She/her"
+popup/item_0/id = 1
+popup/item_1/text = "He/him"
+popup/item_1/id = 2
+popup/item_2/text = "They/them"
+popup/item_2/id = 3
+
+[node name="Finish" type="Button" parent="." unique_id=1408979074]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 512.0
+offset_right = 652.0
+offset_bottom = 561.0
+theme = SubResource("Theme_a4krr")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_7a8ye")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_s2ta7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ayt76")
+text = "Finish"
+
+[node name="Alert" type="Label" parent="." unique_id=2103833356]
+visible = false
+layout_mode = 0
+offset_left = 361.0
+offset_top = 447.0
+offset_right = 711.0
+offset_bottom = 487.0
+theme_override_colors/font_color = Color(0.99694544, 6.2329323e-06, 1.540184e-06, 1)
+theme_override_font_sizes/font_size = 20

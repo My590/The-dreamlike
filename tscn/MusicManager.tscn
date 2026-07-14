@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dw82uh5tx6hj2"]
+
+[ext_resource type="Script" uid="uid://rpxmpe0obetl" path="res://Visual Novel Romance/gd/MusicManager.gd" id="1_oh34l"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=140766901]
+script = ExtResource("1_oh34l")

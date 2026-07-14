@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c8ovu3kivy1hs"
+path="res://.godot/imported/scene1.dialogue-29a4acb74b2190b926c618eb149081f3.tres"
+
+[deps]
+
+source_file="res://Visual Novel Romance/scene1.dialogue"
+dest_files=["res://.godot/imported/scene1.dialogue-29a4acb74b2190b926c618eb149081f3.tres"]
+
+[params]
+
+defaults=true

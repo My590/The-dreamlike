@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://d1k1ggskhueia"]
+
+[ext_resource type="Script" uid="uid://byyc4xt1rp2kn" path="res://Visual Novel Romance/gd/Notification.gd" id="1_hym4p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_db016"]
+bg_color = Color(0.18431373, 0.18431373, 0.18431373, 0.4745098)
+corner_radius_top_left = 10
+corner_radius_bottom_left = 10
+
+[node name="Notification" type="Control" unique_id=1667428508]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 361.0
+offset_bottom = -585.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hym4p")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=144072660]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1958724941]
+visible = false
+custom_minimum_size = Vector2(0, 55)
+offset_left = 363.0
+offset_right = 1155.0
+offset_bottom = 55.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_db016")
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel" unique_id=235142692]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 767.0
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 20
+text = "Alert"

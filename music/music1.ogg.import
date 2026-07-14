@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://xbet1tk84klo"
+path="res://.godot/imported/music1.ogg-ff475b8499e0865c4c6331676ce2ec7d.oggvorbisstr"
+
+[deps]
+
+source_file="res://Visual Novel Romance/music/music1.ogg"
+dest_files=["res://.godot/imported/music1.ogg-ff475b8499e0865c4c6331676ce2ec7d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://ddk3klvwa3vw8"]
+
+[ext_resource type="Script" uid="uid://b1nnkgpcuqhes" path="res://Visual Novel Romance/gd/Game.gd" id="1_33n0o"]
+[ext_resource type="Texture2D" uid="uid://3td8hkbb4rsg" path="res://Visual Novel Romance/files/room.png" id="2_auhhs"]
+[ext_resource type="Texture2D" uid="uid://c0x1cmn22kqoj" path="res://Visual Novel Romance/files/SpiteMario.png" id="3_33n0o"]
+[ext_resource type="Texture2D" uid="uid://dnysklttdivsx" path="res://Visual Novel Romance/files/save.png" id="4_1guhx"]
+[ext_resource type="Texture2D" uid="uid://b2uitqurgw1f0" path="res://Visual Novel Romance/files/pasta-aberta.png" id="5_ef3et"]
+[ext_resource type="Texture2D" uid="uid://dvla23jqw8oh6" path="res://Visual Novel Romance/files/quit.png" id="6_mutgm"]
+[ext_resource type="VideoStream" uid="uid://cgimw57rhyobj" path="res://Visual Novel Romance/files/Breakfast_high.ogv" id="7_u4ckh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iotsf"]
+content_margin_left = 10.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+expand_margin_left = 10.0
+
+[node name="Game" type="Control" unique_id=848113776]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_33n0o")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=509178714]
+self_modulate = Color(0.7358263, 0.817351, 1, 1)
+custom_maximum_size = Vector2(1150, 650)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -2.0
+offset_bottom = 2.0
+texture = ExtResource("2_auhhs")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1180462429]
+visible = false
+position = Vector2(480, 253.49998)
+scale = Vector2(0.362862, 0.19487983)
+texture = ExtResource("3_33n0o")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1083709759]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Panel" type="Panel" parent="." unique_id=442917194]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 1152.0
+offset_bottom = 64.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_iotsf")
+
+[node name="Grid" type="GridContainer" parent="Panel" unique_id=2018001473]
+custom_minimum_size = Vector2(0, 45)
+custom_maximum_size = Vector2(-1, 45)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 9.5
+offset_right = -6.0
+offset_bottom = -9.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 20
+columns = 5
+
+[node name="Save" type="TextureButton" parent="Panel/Grid" unique_id=2032348675]
+custom_minimum_size = Vector2(35, 35)
+custom_maximum_size = Vector2(35, 40)
+layout_mode = 2
+texture_normal = ExtResource("4_1guhx")
+ignore_texture_size = true
+
+[node name="Load" type="TextureButton" parent="Panel/Grid" unique_id=1866548933]
+custom_minimum_size = Vector2(40, 40)
+custom_maximum_size = Vector2(40, 40)
+layout_mode = 2
+texture_normal = ExtResource("5_ef3et")
+ignore_texture_size = true
+
+[node name="Quit" type="TextureButton" parent="Panel/Grid" unique_id=827444436]
+custom_minimum_size = Vector2(35, 35)
+custom_maximum_size = Vector2(35, 40)
+layout_mode = 2
+texture_normal = ExtResource("6_mutgm")
+texture_pressed = ExtResource("6_mutgm")
+ignore_texture_size = true
+
+[node name="HealthLabel" type="Label" parent="Panel" unique_id=1495574124]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 14.0
+offset_right = 436.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Hp: 100/100"
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=768248811]
+custom_maximum_size = Vector2(-1, 500)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -575.0
+offset_top = -330.0
+offset_right = 575.0
+offset_bottom = 330.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("7_u4ckh")
+speed_scale = 0.2
+
+[connection signal="pressed" from="Panel/Grid/Save" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="Panel/Grid/Load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="Panel/Grid/Quit" to="." method="_on_quit_pressed"]
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]
