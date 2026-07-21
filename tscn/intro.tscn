@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c4yutgnyx5o10"]
 
 [ext_resource type="Script" uid="uid://xknoge5hngvu" path="res://Visual Novel Romance/gd/Intro.gd" id="1_tegoy"]
-[ext_resource type="Texture2D" uid="uid://cc4n7xbtxitjm" path="res://Visual Novel Romance/files/fundo-branco-png.png" id="2_tegoy"]
+[ext_resource type="Texture2D" uid="uid://b4ql07h3h5moy" path="res://Visual Novel Romance/files/img5.png" id="2_tegoy"]
 
 [sub_resource type="Theme" id="Theme_a4krr"]
 
@@ -40,7 +40,6 @@ grow_vertical = 2
 script = ExtResource("1_tegoy")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=2135466740]
-self_modulate = Color(0.44313726, 0.7294118, 0.99215686, 1)
 custom_maximum_size = Vector2(1150, 650)
 layout_mode = 1
 anchors_preset = -1

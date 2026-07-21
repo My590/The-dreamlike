@@ -2,11 +2,17 @@
 
 [ext_resource type="Script" uid="uid://b1nnkgpcuqhes" path="res://Visual Novel Romance/gd/Game.gd" id="1_33n0o"]
 [ext_resource type="Texture2D" uid="uid://3td8hkbb4rsg" path="res://Visual Novel Romance/files/room.png" id="2_auhhs"]
-[ext_resource type="Texture2D" uid="uid://c0x1cmn22kqoj" path="res://Visual Novel Romance/files/SpiteMario.png" id="3_33n0o"]
+[ext_resource type="Texture2D" uid="uid://cblar5q6c26vt" path="res://Visual Novel Romance/files/img3.png" id="3_33n0o"]
+[ext_resource type="Texture2D" uid="uid://cndxskn81m1mw" path="res://Visual Novel Romance/files/img7.png" id="4_0fdwx"]
 [ext_resource type="Texture2D" uid="uid://dnysklttdivsx" path="res://Visual Novel Romance/files/save.png" id="4_1guhx"]
 [ext_resource type="Texture2D" uid="uid://b2uitqurgw1f0" path="res://Visual Novel Romance/files/pasta-aberta.png" id="5_ef3et"]
+[ext_resource type="Texture2D" uid="uid://cxpbf4p4c0bty" path="res://Visual Novel Romance/files/img6.png" id="5_jocc4"]
+[ext_resource type="Texture2D" uid="uid://ovevmjcxu2ds" path="res://Visual Novel Romance/files/img8.png" id="6_cnvky"]
 [ext_resource type="Texture2D" uid="uid://dvla23jqw8oh6" path="res://Visual Novel Romance/files/quit.png" id="6_mutgm"]
 [ext_resource type="VideoStream" uid="uid://cgimw57rhyobj" path="res://Visual Novel Romance/files/Breakfast_high.ogv" id="7_u4ckh"]
+[ext_resource type="Texture2D" uid="uid://dyd7inw43oebc" path="res://Visual Novel Romance/files/img9-v1.png" id="7_xr77j"]
+[ext_resource type="Texture2D" uid="uid://c516b0u838kev" path="res://Visual Novel Romance/files/img0.png" id="8_33n0o"]
+[ext_resource type="Texture2D" uid="uid://c1bi2ixfk8yje" path="res://Visual Novel Romance/files/img14.png" id="8_psdkr"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iotsf"]
 content_margin_left = 10.0
@@ -20,6 +26,29 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 expand_margin_left = 10.0
+
+[sub_resource type="Theme" id="Theme_0fdwx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jocc4"]
+bg_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cnvky"]
+bg_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xr77j"]
+bg_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [node name="Game" type="Control" unique_id=848113776]
 layout_mode = 3
@@ -41,11 +70,41 @@ offset_right = -2.0
 offset_bottom = 2.0
 texture = ExtResource("2_auhhs")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1180462429]
+[node name="Sprite1" type="Sprite2D" parent="." unique_id=1180462429]
 visible = false
-position = Vector2(480, 253.49998)
-scale = Vector2(0.362862, 0.19487983)
+position = Vector2(522, 353.6844)
+scale = Vector2(1.3792567, 1.5908009)
 texture = ExtResource("3_33n0o")
+
+[node name="Sprite2" type="Sprite2D" parent="." unique_id=1890502130]
+visible = false
+position = Vector2(598, 327)
+scale = Vector2(1.8547759, 1.7252011)
+texture = ExtResource("4_0fdwx")
+
+[node name="Sprite3" type="Sprite2D" parent="." unique_id=1106314386]
+visible = false
+position = Vector2(620, 368)
+scale = Vector2(0.8542732, 0.89629006)
+texture = ExtResource("5_jocc4")
+
+[node name="Sprite4" type="Sprite2D" parent="." unique_id=1009286667]
+visible = false
+position = Vector2(409, 342)
+scale = Vector2(1.5955166, 1.4705094)
+texture = ExtResource("6_cnvky")
+
+[node name="Sprite5" type="Sprite2D" parent="." unique_id=80678161]
+visible = false
+position = Vector2(299, 265)
+scale = Vector2(0.95614034, 1.0683646)
+texture = ExtResource("7_xr77j")
+
+[node name="Sprite6" type="Sprite2D" parent="." unique_id=1250053615]
+visible = false
+position = Vector2(582, 369)
+scale = Vector2(1.537037, 1.5087131)
+texture = ExtResource("8_psdkr")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1083709759]
 modulate = Color(0, 0, 0, 1)
@@ -102,6 +161,15 @@ texture_normal = ExtResource("6_mutgm")
 texture_pressed = ExtResource("6_mutgm")
 ignore_texture_size = true
 
+[node name="Menu" type="Button" parent="Panel/Grid" unique_id=976440713]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme = SubResource("Theme_0fdwx")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jocc4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cnvky")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xr77j")
+text = "Main menu"
+
 [node name="HealthLabel" type="Label" parent="Panel" unique_id=1495574124]
 layout_mode = 0
 offset_left = 296.0
@@ -129,7 +197,16 @@ grow_vertical = 2
 stream = ExtResource("7_u4ckh")
 speed_scale = 0.2
 
+[node name="img1" type="TextureRect" parent="." unique_id=586150129]
+visible = false
+layout_mode = 0
+offset_top = 64.0
+offset_right = 1153.0
+offset_bottom = 651.0
+texture = ExtResource("8_33n0o")
+
 [connection signal="pressed" from="Panel/Grid/Save" to="." method="_on_save_pressed"]
 [connection signal="pressed" from="Panel/Grid/Load" to="." method="_on_load_pressed"]
 [connection signal="pressed" from="Panel/Grid/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Panel/Grid/Menu" to="." method="_on_menu_pressed"]
 [connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://hgir5jdf3mxc"]
 
 [ext_resource type="Script" uid="uid://2bmy8e254k6y" path="res://Visual Novel Romance/gd/Interface.gd" id="1_24hth"]
-[ext_resource type="Texture2D" uid="uid://cc4n7xbtxitjm" path="res://Visual Novel Romance/files/fundo-branco-png.png" id="2_24hth"]
+[ext_resource type="Texture2D" uid="uid://b4ql07h3h5moy" path="res://Visual Novel Romance/files/img5.png" id="2_24hth"]
 
 [sub_resource type="Theme" id="Theme_limw0"]
 
@@ -103,13 +103,13 @@ metadata/_edit_use_anchors_ = true
 [node name="Label" type="Label" parent="." unique_id=183654992]
 layout_mode = 0
 offset_left = 48.0
-offset_top = 41.0
+offset_top = 84.0
 offset_right = 527.0
-offset_bottom = 193.0
+offset_bottom = 236.0
 theme = SubResource("Theme_limw0")
-theme_override_colors/font_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
-theme_override_font_sizes/font_size = 40
-text = "Dreamlike"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "The dreamlike"
 
 [node name="Buttons" type="VBoxContainer" parent="." unique_id=965881488]
 layout_mode = 0
@@ -188,7 +188,7 @@ offset_left = 35.0
 offset_top = 14.0
 offset_right = 341.0
 offset_bottom = 62.0
-theme_override_colors/font_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 25
 text = "About"
 
@@ -196,14 +196,22 @@ text = "About"
 layout_mode = 0
 offset_left = 33.0
 offset_top = 103.0
-offset_right = 553.0
+offset_right = 569.0
 offset_bottom = 518.0
-theme_override_colors/font_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 20
-text = "Description, developer, which game engine
- was used, game version, participation of x, music, 
-sound 
-effects, voices of y, official channels"
+text = "Developed in Godot using Dialogue Manager version 
+v3.10.2.    Produced by Anelim_perfil. GitHub: My590
+
+Sound Effect by DRAGON-STUDIO from Pixabay
+Sound Effect by freesound_community from Pixabay
+One sound effect was created by me, while others
+came from Pixabay
+
+Note: The game saves after a choice or certain events, 
+but as a general rule, consider choices to be save points
+The game does not save automatically
+"
 
 [node name="CloseButton" type="Button" parent="AboutPanel" unique_id=678606773]
 layout_mode = 0
@@ -232,7 +240,7 @@ offset_left = 35.0
 offset_top = 14.0
 offset_right = 341.0
 offset_bottom = 62.0
-theme_override_colors/font_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 25
 text = "Preferences"
 
@@ -242,13 +250,11 @@ offset_left = 33.0
 offset_top = 76.0
 offset_right = 553.0
 offset_bottom = 449.0
-theme_override_colors/font_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 20
 text = "Languages:
-Chinese
 English
-Portuguese
-Spanish"
+Portuguese"
 
 [node name="Volume" type="Label" parent="PreferencesPanel" unique_id=173568900]
 layout_mode = 0
@@ -256,7 +262,7 @@ offset_left = 36.0
 offset_top = 280.0
 offset_right = 478.0
 offset_bottom = 320.0
-theme_override_colors/font_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 20
 
 [node name="Text" type="Label" parent="PreferencesPanel" unique_id=1747272981]
@@ -265,7 +271,7 @@ offset_left = 36.0
 offset_top = 250.0
 offset_right = 478.0
 offset_bottom = 290.0
-theme_override_colors/font_color = Color(0.24313726, 0.2627451, 0.7490196, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 20
 text = "Music volume"
 

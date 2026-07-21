@@ -1,7 +1,7 @@
 extends Control
 
 @onready var fade = $ColorRect
-@onready var character_sprite = $Sprite2D
+@onready var character_sprite = $Sprite1
 @onready var video = $VideoStreamPlayer
 @onready var health_label = $Panel/HealthLabel
 
@@ -14,6 +14,16 @@ func _ready():
 	SceneController.register_game(self)
 	SceneController.background = $TextureRect
 	SceneController.fade = $ColorRect
+	
+	$Sprite1.visible = false
+	$Sprite2.visible = false
+	$Sprite3.visible = false
+	$Sprite4.visible = false
+	$Sprite5.visible = false
+	$Sprite6.visible = false
+	
+	if GameData.current_background != "":
+		SceneController.change_background(GameData.current_background)
 	
 	_start_intro()
 	SaveManager.notification_requested.connect(show_notification)
@@ -42,8 +52,24 @@ func play_video(path: String):
 	video.visible = true
 	video.play()
 	
-func _on_video_stream_player_finished():
+func stop_video():
+	video.stop()
 	video.visible = false
+	
+@onready var img = $img1
+
+func show_img(path: String):
+	img.texture = load(path)
+	img.visible = true
+
+func hide_img():
+	img.visible = false
+	
+func _on_video_stream_player_finished():
+	video.stop()
+	video.hide()
+	
+	SceneController.change_background("res://Visual Novel Romance/files/img2.png")
 
 func change_expression(expression):
 	match expression:
@@ -82,6 +108,6 @@ func _on_load_pressed() -> void:
 	add_child(panel)
 	panel.setup(panel.Mode.LOAD)
 	
-func _on_area_2d_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
-	if event is InputEventMouseButton and event.pressed:
-		print("Cliquei na porta!")
+
+func _on_menu_pressed() -> void:
+	get_tree().change_scene_to_file("res://Visual Novel Romance/tscn/Interface.tscn")

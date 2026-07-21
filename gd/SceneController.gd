@@ -4,7 +4,6 @@ signal sequence_finished
 
 var background
 var fade
-var character
 var game: Node
 
 func register_game(game_node: Node):
@@ -14,11 +13,27 @@ func play_video(path: String):
 	if game:
 		game.play_video(path) 
 
+func stop_video():
+	if game:
+		game.stop_video()
+		
+
 func change_background(path: String):
-	background.texture = load(path)
+	GameData.current_background = path
 	
-func show_character(path: String):
-	character.texture = load(path)
+	var texture = load(path)
+	background.texture = texture
+	
+	fade.modulate.a = 0.0
+	fade.show()
+	
+func show_character(character_name: String):
+	var character = game.get_node(character_name)
+	character.visible = true
+
+func hide_character(character_name: String):
+	var character = game.get_node(character_name)
+	character.visible = false
 
 func play_music(path: String):
 	MusicManager.play_music(path)
@@ -61,3 +76,13 @@ func fade_in():
 	)
 
 	await tween.finished
+
+func show_img(path: String):
+	if game:
+		game.show_img(path)
+
+func hide_img():
+	if game:
+		game.hide_img()
+		
+		

@@ -18,33 +18,35 @@ do MusicManager.play_music("res://Visual Novel Romance/music/music1.ogg")
 do SaveManager.set_checkpoint("breakfast")
 do GameData.morning_route = "breakfast"
 do SceneController.fade_to_black()
-do SceneController.change_background("res://Visual Novel Romance/files/Blue.png")
 
-You head to the kitchen to prepare your breakfast.
+You head to the kitchen to prepare your breakfast
 
 do SceneController.play_video("res://Visual Novel Romance/files/Breakfast_high.ogv")
 
-{{GameData.player_name}}: Nothing could be better than this.
+{{GameData.player_name}}: Nothing could be better than this
 
-Felix sits on the table beside you, staring at your breakfast as if he hasn't eaten in days.
+Felix sits on the table beside you, staring at your breakfast as if he hasn't eaten in days
 
-Despite his dramatic expression, he finished his own meal only a few minutes ago.
+Despite his dramatic expression, he finished his own meal only a few minutes ago
 
-After breakfast, you finish getting ready and head to the university.
+After breakfast, you finish getting ready and head to the university
 
--- change image --
+do SceneController.stop_video()
+do SceneController.change_background("res://Visual Novel Romance/files/img2.png")
 
 When you arrive, you meet your friend from the History department.
 
-Gio: Hey, {{GameData.player_name}}. Do you remember my last study about local folklore? I found more information about the stories we used to hear when we were children.
+do SceneController.show_character("Sprite1")
 
-You begin to remember the tales about dreams, where an Oneiric being protects the dreams of children and the world itself, keeping balance between them.
+Gio: Hey, {{GameData.player_name}}. Do you remember my last study about local folklore? I found more information about the stories we used to hear when we were children
 
-The legend says that when people stop dreaming, the Oneirics lose their strength, leaving humanity vulnerable to the attacks of their greatest nightmares.
+You begin to remember the tales about dreams, where an Oneiric being protects the dreams of children and the world itself, keeping balance between them
 
-Gio: Well, according to the book I'm reading, these stories are ancient and connected to rituals and ancestral temples.
+The legend says that when people stop dreaming, the Oneirics lose their strength, leaving humanity vulnerable to the attacks of their greatest nightmares
 
-Gio: This book suggests that, if those practices truly worked, people could reach a state where they were able to control their dreams. Dreams could even become a way to understand the present or glimpse the future.
+Gio: Well, according to the book I'm reading, these stories are ancient and connected to rituals and ancestral temples
+
+Gio: This book suggests that, if those practices truly worked, people could reach a state where they were able to control their dreams. Dreams could even become a way to understand the present or glimpse the future
 
 Gio: I'm going to use this book for my research project. What did you think about it?
 
@@ -57,21 +59,21 @@ Gio: I'm going to use this book for my research project. What did you think abou
 ~ about
 do SaveManager.set_checkpoint("about")
 
-{{GameData.player_name}}: That's incredible. Is this book from the university? I'd love to hear more about your research.
+{{GameData.player_name}}: That's incredible. Is this book from the university? I'd love to hear more about your research
 
-Gio: Actually, I borrowed it from a small chapel not far from here. There are plenty of academic books on the subject, but I wanted firsthand accounts from people who actually lived through those experiences.
+Gio: Actually, I borrowed it from a small chapel not far from here. There are plenty of academic books on the subject, but I wanted firsthand accounts from people who actually lived through those experiences
 
-Gio: That's what makes this one so fascinating. It was written by a monk who documented his entire journey, from his first encounters with those practices to the day he became a monk himself.
+Gio: That's what makes this one so fascinating. It was written by a monk who documented his entire journey, from his first encounters with those practices to the day he became a monk himself
 
-The two of you continue talking until it's time for class.
+The two of you continue talking until it's time for class
 
-Once inside the classroom, you struggle to stay awake. After managing to copy a few notes, the lecture finally comes to an end.
+Once inside the classroom, you struggle to stay awake. After managing to copy a few notes, the lecture finally comes to an end
 
-As everyone begins to leave, Gio catches up with you.
+As everyone begins to leave, Gio catches up with you
 
 Gio: Heading home? Want to walk together?
 
-You nod, and the two of you leave the university side by side.
+You nod, and the two of you leave the university side by side
 
 => work
 
@@ -80,40 +82,43 @@ do SaveManager.set_checkpoint("tales")
 
 {{GameData.player_name}}: So... the stories our parents used to tell us actually came from this folklore?
 
-{{GameData.player_name}}: There were so many of them, but I can barely remember any now.
+{{GameData.player_name}}: There were so many of them, but I can barely remember any now
 
-Gio: That's right. Over time, most people simply forgot them. Even so, many older generations still hold on to those legends.
+Gio: That's right. Over time, most people simply forgot them. Even so, many older generations still hold on to those legends
 
-Gio: We even have festivals and traditions that keep the stories alive, though they're nothing like they used to be.
+Gio: We even have festivals and traditions that keep the stories alive, though they're nothing like they used to be
 
-{{GameData.player_name}}: I loved listening to those stories when I was a kid. But eventually everyone stopped talking about them.
+{{GameData.player_name}}: I loved listening to those stories when I was a kid. But eventually everyone stopped talking about them
 
-{{GameData.player_name}}: I remember attending ceremonies where people encouraged us to treasure our dreams and never give up on them.
+{{GameData.player_name}}: I remember attending ceremonies where people encouraged us to treasure our dreams and never give up on them
 
-Gio: That's one of the core beliefs behind these traditions.
+Gio: That's one of the core beliefs behind these traditions
 
-Gio: Dreams are said to reveal who we truly are... or, sometimes, the parts of ourselves we're trying to hide.
+Gio: Dreams are said to reveal who we truly are... or, sometimes, the parts of ourselves we're trying to hide
 
-Gio: To stop dreaming, or to stop pursuing your goals, is like turning your back on your own identity.
+Gio: To stop dreaming, or to stop pursuing your goals, is like turning your back on your own identity
 
-{{GameData.player_name}}: That's... actually a really interesting way of looking at it.
+{{GameData.player_name}}: That's... actually a really interesting way of looking at it
 
-{{GameData.player_name}}: I'd better get going. My class has probably already started.
+{{GameData.player_name}}: I'd better get going. My class has probably already started
 
 Gio: See you around.
+do SceneController.hide_character("Sprite1")
 
-You make your way to class, though staying awake proves to be a challenge.
+You make your way to class, though staying awake proves to be a challenge
 
-After scribbling down a few notes, the lecture finally ends.
+After scribbling down a few notes, the lecture finally ends
 
-As you're leaving campus, Gio catches up with you.
+As you're leaving campus, Gio catches up with you
+do SceneController.show_character("Sprite1")
 
 Gio: Ready to head home?
 
-You agree, and the two of you walk away from the university together.
+You agree, and the two of you walk away from the university together
+
+do SceneController.hide_character("Sprite1")
 
 => work
-
 
 ~ sleep_more
 do SaveManager.set_checkpoint("sleep_more")
@@ -126,29 +131,31 @@ Some time later...
 
 {{GameData.player_name}}: Wait... What time is it?!
 
-You hurriedly grab the first clothes you can find, only to notice they're covered in Felix's fur. With no time to waste, you throw on a darker outfit to hide it as best as you can.
+You hurriedly grab the first clothes you can find, only to notice they're covered in Felix's fur. With no time to waste, you throw on a darker outfit to hide it as best as you can
 
-You rush out of the house and make your way to the university, already running late.
+You rush out of the house and make your way to the university, already running late
 
-By the time you arrive, class has already begun. You quietly take your seat and start taking notes.
+do SceneController.change_background("res://Visual Novel Romance/files/img2.png")
+By the time you arrive, class has already begun. You quietly take your seat and start taking notes
 
-After class, you run into Mary.
+After class, you run into Mary
+do SceneController.show_character("Sprite2")
 
 Mary: Hey. How have you been?
 
 - Not so well
   => not_well
 
-- I've been doing alright.
+- I've been doing alright
   => good
 
 ~ not_well
 do SaveManager.set_checkpoint("not_well")
 {{GameData.player_name}}: I didn't sleep very well. I accidentally fell back asleep this morning and ended up running late... But enough about me. How have you been?
 
-Mary: I've been really busy lately, but I'm doing well.
+Mary: I've been really busy lately, but I'm doing well
 
-{{GameData.player_name}}: I'm glad to hear that. I know how it is. Between classes, research, and assignments, there's always something to do.
+{{GameData.player_name}}: I'm glad to hear that. I know how it is. Between classes, research, and assignments, there's always something to do
 
 => work
 
@@ -158,23 +165,35 @@ do SaveManager.set_checkpoint("good")
 
 {{GameData.player_name}}: I've been doing alright, all things considered. You're heading home through Main Avenue, right?
 
-Mary: Yeah. We can walk together if you'd like.
+Mary: Yeah. We can walk together if you'd like
+
 
 => work
 
 ~ work
 
-The two of you leave campus together, chatting about extracurricular credits, hobbies, and upcoming assignments.
+if GameData.morning_route == "breakfast":
+	do SceneController.show_character("Sprite1")
+	The two of you leave campus together, chatting about extracurricular credits, hobbies, and upcoming assignments
+	Eventually, you say goodbye and enter a nearby office building
+	do SceneController.hide_character("Sprite1")
+	
+if GameData.morning_route == "sleep":
+	do SceneController.show_character("Sprite2")
+	The two of you leave campus together, chatting about extracurricular credits, hobbies, and upcoming assignments
+	Eventually, you say goodbye and enter a nearby office building
+	do SceneController.hide_character("Sprite2")
 
-Eventually, you say goodbye and enter a nearby office building.
 
-It's your workplace.
+It's your workplace
+do SceneController.fade_to_black()
+do SceneController.change_background("res://Visual Novel Romance/files/img4.png")
 
-You settle into your desk and spend the next few hours working, occasionally chatting with your coworkers.
+You settle into your desk and spend the next few hours working, occasionally chatting with your coworkers
 
-After hours of typing, you decide you need a short break, even though it's not lunchtime yet.
+After hours of typing, you decide you need a short break, even though it's not lunchtime yet
 
-- Hide in the restroom and check your phone.
+- Hide in the restroom and check your phone
   => restroom
 
 - Grab a cup of coffee.
@@ -201,20 +220,20 @@ do SaveManager.set_checkpoint("message")
 if GameData.morning_route == "breakfast":
 
 	do GameData.last_person_texted = "gio"
-	You decide to send Gio a quick message.
+	You decide to send Gio a quick message
 
 	=> after_message
 
 elif GameData.morning_route == "sleep":
 
 	do GameData.last_person_texted = "mary"
-	You decide to send Mary a quick message.
+	You decide to send Mary a quick message
 
 	=> after_message
 
 ~ after_message
 do SaveManager.set_checkpoint("after_message")
-You wait for a reply.
+You wait for a reply
 
 Nothing.
 
@@ -228,22 +247,20 @@ With a quiet sigh, you put your phone away and return to work. Before long, your
 do SaveManager.set_checkpoint("feed")
 You keep scrolling longer than you intended.
 
-By the time you put your phone away, you feel even more exhausted than before.
+By the time you put your phone away, you feel even more exhausted than before
 
-You finish your shift almost on autopilot, and before you realize it, you're already standing at your front door.
+You finish your shift almost on autopilot, and before you realize it, you're already standing at your front door
 
 => go_home
 
-=> END
-
 ~ coffee
-do SaveManager.set_checkpoint("coffe")
+do SaveManager.set_checkpoint("coffee")
 
-%70
+%50
 	do GameData.change_health(-5)
-	The coffee is much hotter than expected, and you burn your tongue.
+	The coffee is much hotter than expected, and you burn your tongue
 
-Feeling a little more awake, you return to work and finish the rest of your shift.
+Feeling a little more awake, you return to work and finish the rest of your shift
 
 => go_home
 
@@ -254,17 +271,16 @@ Feeling a little more awake, you return to work and finish the rest of your shif
 
 => go_home
 
-%50
+%20
 	It's actually a really good cup of coffee.
 
 Feeling a little more awake, you return to work and finish the rest of your shift.
 
 => go_home
 
-=> END
-
 ~ nap
 do SaveManager.set_checkpoint("nap")
+do SceneController.fade_to_black()
 You close your eyes for what feels like only a minute.
 
 When you wake up, a coworker is already complaining that you've been asleep.
@@ -272,8 +288,6 @@ When you wake up, a coworker is already complaining that you've been asleep.
 You brush it off, finish your work, and head home after your shift.
 
 => go_home
-
-=> END
 
 ~ pretend
 do SaveManager.set_checkpoint("pretend")
@@ -290,14 +304,817 @@ Once your shift ends, you head home.
 ~ go_home
 do SaveManager.set_checkpoint("go_home")
 do SceneController.fade_to_black()
--- Home animation
+do SceneController.change_background("res://Visual Novel Romance/files/img0.png")
+
+As you slowly open the front door, you accidentally drop your keys. In that brief moment, Felix slips outside.
+
+{{GameData.player_name}}: Felix, why?! You've never done this before. He ran into the forest... It's dangerous. I have to find him before night falls
+
+You head into the forest, but there are no clear signs of where Felix went. No strange noises, no meows... nothing
+
+do SceneController.fade_in()
+do SceneController.change_background("res://Visual Novel Romance/files/img5.png")
+
+You keep following a narrow trail until you come across a glowing creature.
+
+do SceneController.show_character("Sprite5")
+
+???: Run! It's coming!
+
+The glowing being looks exhausted and terrified
+
+- Ignore and keep looking for Felix
+	=> search
+
+- Ask what's happening
+	=> to_question
+
+~ search
+do SaveManager.set_checkpoint("search")
+
+You carefully scan the glowing creature and the surrounding area, searching for any sign of where Felix might have gone. The creature suddenly speaks.
+
+???: What are you doing? We need to find shelter before the creatures of darkness arrive.
+
+{{GameData.player_name}}: This has to be some kind of prank... So, where's the hidden camera?
+
+do MusicManager.play_music_for("res://Visual Novel Romance/music/music4.mp3", 1.0)
+
+{{GameData.player_name}}: Very funny... ha... ha...
+
+=> beast_appears
+
+~ to_question
+do SaveManager.set_checkpoint("to_question")
+{{GameData.player_name}}: Run from what? What are you?
+
+do MusicManager.play_music_for("res://Visual Novel Romance/music/music4.mp3", 1.0)
+
+~ beast_appears
+do SaveManager.set_checkpoint("beast_appears")
+do SceneController.change_background("res://Visual Novel Romance/files/img5.png")
+do MusicManager.play_music("res://Visual Novel Romance/music/music3-v1.mp3")
+do SceneController.show_character("Sprite3")
+
+[shake rate=20 level=10]Your heart pounds as your entire body begins to shake.[/shake]
+
+ The beast lunges toward the glowing being, trying to seize it. The creature narrowly escapes and flies straight toward you.
+
+???: Run!!!
+
+The two of you sprint back toward the road. You rush inside your house in a panic, only to realize the glowing being has followed you.
+do SceneController.hide_character("Sprite3")
+do SceneController.fade_to_black()
+do SceneController.change_background("res://Visual Novel Romance/files/fundo-branco-png.png")
+
+{{GameData.player_name}}: This has to be some kind of nightmare... Or maybe I'm losing my mind.
+
+???: Thank you for giving me shelter, Dreamer.
+
+{{GameData.player_name}}: ...
+
+{{GameData.player_name}}: By the Goddess... WHAT WAS THAT?!
+
+???: My name is Ello.
+
+Ello: I am a guardian of dreams. My duty is to protect the dreams of every living soul.
+
+Ello: I was watching over people's dreams, but little by little... there were fewer dreams left to protect.
+
+Ello: So I decided to come here, hoping I could help restore people's dreams. But unfortunately, the nightmares had the same idea.
+
+Ello: The beasts born from nightmares have taken physical form.
+
+{{GameData.player_name}}: Wait... You mean like the stories I used to hear when I was a kid?
+
+Ello: I suppose so. Every culture has its own way of describing the beings who watch over dreams.
+
+Ello: The beast chasing me wanted my powers. It won't stop until it devours every dream that's left.
+
+Ello: I think we're safe here. Those creatures thrive in darkness. It's easier for them to twist what people see, filling the living with fear before tormenting them in their nightmares.
+
+Ello: I'm worried about the animals still trapped in the forest...
+
+{{GameData.player_name}}: [shake rate=10 level=5] What about my cat?! Is Felix in danger? What am I supposed to do?![/shake]
+
+Ello: I don't think we should return to the forest. It's far too dangerous.
+
+Ello: I can try to protect his dreams. If I succeed, he'll be safe for now
+
+{{GameData.player_name}}: I don't know... What's the worst that beast could do?
+
+Ello: ...
+
+Ello: It could corrupt what remains of this world, driving everyone into madness through endless nightmares
+
+Ello: I need to rest. Nearly being devoured isn't exactly easy to recover from
+
+Ello settles down to rest in the living room
+
+do SceneController.hide_character("Sprite5")
+do SceneController.fade_to_black()
+do SceneController.change_background("res://Visual Novel Romance/files/room1.png")
+
+You return to your bedroom, hoping Felix is still alive
+
+You received a message
+
+- Reply
+	=> reply
+
+- Ignore the message
+	=> no_reply
+
+~ reply
+do SaveManager.set_checkpoint("reply")
+if GameData.morning_route == "breakfast" and GameData.last_person_texted == "gio"
+	Your phone lights up.
+	Gio: I found out more things about folklore
+	{{GameData.player_name}}: Cool, tell me more tomorrow
+	
+	=> to_dream
+	
+if GameData.morning_route == "sleep" and GameData.last_person_texted == "mary"
+	Your phone lights up.
+	Mary: Sorry, I was working earlier.
+	{{GameData.player_name}}: Don't worry, Mary
+	{{GameData.player_name}}: I have news
+	
+	=> to_dream
+
+It's not any important message
+
+=> to_dream
+
+~ no_reply
+do SaveManager.set_checkpoint("no_reply")
+You keep scrolling through your phone until you eventually drift off to sleep.
+=> to_dream
+
+~ to_dream
+do SaveManager.set_checkpoint("to_dream")
+do SceneController.fade_to_black()
+do SceneController.change_background("res://Visual Novel Romance/files/img10.png")
+do MusicManager.play_music("res://Visual Novel Romance/music/music7.mp3")
+
+You awaken in a place you've never seen before. It looks like... a casino.
+
+do SceneController.show_character("Sprite3")
+
+do MusicManager.play_music("res://Visual Novel Romance/music/music7.mp3")
+
+{{GameData.player_name}}: Where am I? How did I get here?
+
+Beast: Welcome... dear Dreamer.
+Beast: Come closer. Place your bet... Tell me, what do you wish to achieve?
+
+- Bet your HP
+	=> bet
+
+- Refuse to bet
+	=> refuse
+	
+~ refuse
+do SaveManager.set_checkpoint("refuse")
+{{GameData.player_name}}: Gambling really isn't my thing. I'm not lucky... and besides, what's the prize?
+
+Beast: How about a cute little kitty... the one that ran away earlier?
+
+{{GameData.player_name}}: ...And if I lose?
+
+Beast: You'll find out what's waiting for you...
+
+{{GameData.player_name}}: I really don't feel like playing
+
+Beast: Then accept a small courtesy
+
+do GameData.change_health(-10)
+
+You took damage
+
+do SceneController.fade_to_black()
+
+=> bet
+
+~ bet
+do SaveManager.set_checkpoint("bet")
+
+Beast: The rules are simple. Before us lies a deck of thirty-two cards. Each card bears the symbol of a chess piece. Every piece has its own value
+
+Beast: Pawns are worth 10 points. Knights and Bishops are worth 30. Rooks are worth 50. Queens are worth 70
+
+Beast: Kings do not deal damage. Instead, they restore up to 50 health
+
+Beast: We each begin with the same amount of health
+
+Beast: Three rounds. If your health reaches zero... your dreams become mine
+
+Beast: If mine reaches zero... I'll return your precious cat. Should we both survive, victory belongs to whoever has the most health remaining
+
+Beast: Shall we begin?
+
+do GameData.start_card_game()
+~ round
+
+Round {{GameData.card_round}}
+
+do GameData.player_draw_card()
+
+You drew the {{GameData.get_card_name(GameData.player_card)}}.
+
+do GameData.beast_draw_card()
+
+The Beast drew the {{GameData.get_card_name(GameData.beast_card)}}.
+
+do GameData.resolve_round()
+
+Your HP: {{GameData.health}}
+Beast HP: {{GameData.beast_hp}}
+
+=> check_round
+	
+~ check_round
+if GameData.is_game_over()
+	=> end_game
+
+=> round
+
+~ end_game
+if GameData.get_winner() == "player"
+	=> dream_ends
+
+=> dream_continues
+
+~ dream_continues
+do SaveManager.set_checkpoint("dream_continues")
+do SceneController.show_character("Sprite3")
+do MusicManager.play_music("res://Visual Novel Romance/music/music3-v1.mp3")
+
+The Beast begins to smile
+
+You watch as the Beast transforms, growing larger and more distorted than before
+
+do MusicManager.play_music("res://Visual Novel Romance/music/music8.mp3")
+
+[shake race=20 level=10] A cold sweat runs down your back as you realize there's no escape [/shake]
+
+The surroundings begin to warp, and you start to feel the effects of the nightmare's corruption... You think of your family and friends, but no one can save you
+
+A light appears... it's Ello
+
+You feel weak and exhausted, and your eyes slowly close
+=> dream_ends
+
+~ dream_ends
+do SaveManager.set_checkpoint("dream_ends")
+do SceneController.fade_to_black()
+do SceneController.hide_character("Sprite3")
+
+do SceneController.change_background("res://Visual Novel Romance/files/room1.png")
+
+You slowly wake up, feeling dizzy and exhausted
+
+You open your eyes and see Ello staring at you
+
+do SceneController.show_character("Sprite5")
+
+Ello: Thank goodness you're awake... I thought you were never going to wake up
+
+do GameData.change_health(100)
+
+Ello restores your HP
+
+You feel a little better
+{{GameData.player_name}}: Huh... What was that?
+{{GameData.player_name}}: It's been so long since I last dreamed, and then that monster shows up
+
+Ello: It was intentional. They wanted to leave you with little lucidity so you'd be easier to manipulate
+
+{{GameData.player_name}}: By the Goddess... How can I get rid of this?
+
+Ello: ...Well, I don't think it's wise to stop dreaming. The ideal is to find yourself within the dream, avoiding moments of vulnerability
+
+{{GameData.player_name}}: Find myself? Like one of those church sermons?
+
+Ello: Something like that, but it's not time for that yet...
+
+{{GameData.player_name}}: What about my Felix? Do you think he's okay?
+
+Ello: From what I've been able to monitor, he's doing as well as can be expected
+
+{{GameData.player_name}}: But how can you be so sure? This is all so bizarre
+
+Ello: It's a secret
+
+{{GameData.player_name}}: I need to go study... But I'm so worn out I think I'll skip today
+
+- Go to the university
+  => go_university
+
+- Skip university
+  {{GameData.player_name}}: Finally, some rest
+  => not_go
+
+~ go_university
+do SceneController.hide_character("Sprite5")
+do SaveManager.set_checkpoint("go_university")
+You prepare your breakfast and miss having your cat following you around the house
+
+do SceneController.play_video("res://Visual Novel Romance/files/Breakfast_high.ogv") 
+do SceneController.change_background("res://Visual Novel Romance/files/fundo-branco-png.png")
+You pick up a warm outfit covered in fur and put it on anyway
+do SceneController.stop_video()
+
+On your way to university, you think about what you will have to do during the day
+
+You arrive at the university and find Gio
+do SceneController.change_background("res://Visual Novel Romance/files/img2.png")
+
+do GameData.print_route()
+
+if GameData.morning_route == "breakfast":
+	do SceneController.show_character("Sprite1")
+	Gio: Are you okay? You look a little...
+
+	- Tell him what happened
+		=> tell
+
+	- Don't tell him
+		=> not_tell
+	
+elif GameData.morning_route == "sleep":
+	do SceneController.show_character("Sprite1")
+	Gio: Hey, {{GameData.player_name}}. How are you?
+	Gio: Do you remember my last study about local folklore? I found more information about the stories we used to hear when we were children
+	You begin to remember the tales about dreams, where an Oneiric being protects the dreams of children and the world itself, keeping balance between them
+	The legend says that when people stop dreaming, the Oneirics lose their strength, leaving humanity vulnerable to the attacks of their greatest nightmares
+	Gio: Well, according to the book I'm reading, these stories are ancient and connected to rituals and ancestral temples
+	Gio: This book suggests that, if those practices truly worked, people could reach a state where they were able to control their dreams. Dreams could even become a way to understand the present or glimpse the future
+	Gio: I'm going to use this book for my research project.
+	
+	- talk about your cat
+		=> not_tell
+	
+	- continue talking about the dream myth
+		=> myth 
+
+~ myth 
+do SceneController.show_character("Sprite1")
+{{GameData.player_name}}: I'm more or less...
+{{GameData.player_name}}: Wow, that's crazy, what are you thinking about your research?
+
+Gio: I actually love this subject, when I was younger it wasn't as exciting, but now I can compare different sources
+
+Gio: There are other mythologies that I intend to study in depth, but for now I'll focus on this one
+
+Gio: A lot of things get summarized when we go to a service, and even though they give you a foundation, I don't think it's enough for me, I want to know more
+
+Gio: Have you heard any news?
+
+=> not_tell
+
+~ tell 
+do SceneController.show_character("Sprite1")
+do SaveManager.set_checkpoint("tell")
+{{GameData.player_name}}: You won't believe this... Felix ran away, and when I went looking for him, I ended up finding a dream guardian
+
+{{GameData.player_name}}: This is crazy
+
+Gio: What? Wait, that was a lot to take in all at once
+
+Gio: I didn't expect the prophecy to have already begun... It was only speculation
+
+Gio: This means we haven't been alone for some time
+
+Gio becomes thoughtful, his expression growing somewhat serious
+
+- Ask questions
+  => ask
+
+~ ask
+do SceneController.show_character("Sprite1")
+{{GameData.player_name}}: What does all of this mean?
+
+Gio: So... this means that people in general no longer dream, but despite that, they are still susceptible to the influence of nightmares
+
+Gio: Because of this, the guardians have lost a large part of their strength, which came from the vitality of human dreams
+
+Gio: All of this is quite surprising... It's a process of metamorphosis
+
+{{GameData.player_name}}: Huh??
+
+Gio: How can I put this... It's a change expected in a possible future. It's not predetermined, but it does have certain tendencies
+
+Gio: The prophecy indicates that the future has two main paths. In one, it is possible to restore people's dreams through the intervention of the guardians, while the other happens if the guardians' intervention fails
+
+Gio: The guardians' intervention must be indirect and cautious, because they need to guide people toward understanding who they are, discovering and rediscovering their forgotten dreams
+
+Gio: From there, they will begin to dream more often and in a healthier way, because they will understand that what lies hidden within them can only be safely controlled by understanding who they are, meaning the nightmares' attacks will no longer have any effect
+
+{{GameData.player_name}}: ...And what if they fail?
+
+Gio: It is very likely that people will begin to experience nightmares so real and intense that they will start confusing reality with their nightmares
+
+Gio: They will become aggressive and unrecognizable, because they will see nothing but distortions
+
+Gio: We can continue this later, we should get to class
+
+You go to your classroom and remain thoughtful about the new information you have learned. You pay attention during the university classes from time to time
+
+You wonder if you will meet Gio after class
+
+After hours of studying, you find yourself ready to leave
+
+=> go_work2
+
+~ not_tell
+do SaveManager.set_checkpoint("not_tell")
+do SceneController.show_character("Sprite1")
+{{GameData.player_name}}: I just had a terrible night... My cat ran away, and I still haven't found him
+
+Gio: Oh... That's sad. You'll find him soon, I'm sure of it
+
+Gio: So, how did this happen?
+
+{{GameData.player_name}}: To tell you the truth, I don't even know... I was opening the door to get inside my house when my key fell to the floor, and during that time Felix, who was near the door, ran outside
+
+Gio: I hope he's okay
+
+{{GameData.player_name}}: Me too
+
+{{GameData.player_name}}: Let's change the subject for a bit... Give my mind a chance to relax
+
+{{GameData.player_name}}: You said you had discovered something new. What was it?
+
+Gio: I can tell you're interested in my research
+
+Gio: Well... There are several curiosities and mysteries surrounding these mystical beings
+
+Gio: Nightmares are frequently associated with large animals, creating a sense of helplessness and terror, neutralizing their targets without much effort
+
+Gio: Meanwhile, dream beings are often represented as small, bright, flying creatures
+
+Gio: But it's funny how humans are sometimes represented as both, to suggest that deep down, we are the evil we fear and the good we desire
+
+Gio: Stories always try to convey the idea that you should prioritize who you are over the person others expect you to be
+
+Gio: The complete opposite of nightmares, which try at all costs to make you lose yourself
+
+Gio: Dreams reveal a great deal about who you are, including what you think and feel
+
+{{GameData.player_name}}: Hmmm... So what would it mean to dream about guardians and beasts?
+
+Gio: I'm not an expert in the field... but I would assume it indicates some kind of conflict. I'm not certain, though. It depends a lot on what the dream was like
+
+{{GameData.player_name}}: Ah... I see. That's really interesting, but I think it's time for class to start
+
+Gio: True. See you later
+
+You say goodbye and go to your respective classrooms. You wonder if you should have told him, but you're afraid of what it might trigger
+
+You try to remember the church's commandments, hoping to find something that might help you, but you can't remember much
+
+You wonder if you should talk to Ello to figure out how to deal with this
+
+You struggle to focus on the class material because you don't want to fail the subject, so you take notes and draw to help with your thought process
+
+After class, you head straight to work. On the way, you run into Mary
+
+Mary asks how you are doing, and you briefly explain the situation. She sympathizes with you and says she'll give you a cat collar with a tracker to save you the trouble
+
+Mary tells you about the latest news from her job and how well she's been doing at university this semester, although she still doesn't have much time to have fun
+
+=> go_work2
+
+~ go_work2
+do SceneController.hide_character("Sprite1")
+do SaveManager.set_checkpoint("go_work2")
+do MusicManager.play_music("res://Visual Novel Romance/music/music9.mp3")
+do SceneController.change_background("res://Visual Novel Romance/files/img4.png")
+
+You arrive at work and greet your coworkers
+
+Luiza: You won't believe the news, {{GameData.player_name}}. They're renovating our department, and they're thinking about throwing a little farewell party for Henry
+
+Henry is one of the company's longest-serving employees
+
+You continue talking with Luiza, and the conversation becomes a nice enough distraction to make you laugh a little
+
+During your break, you eat your lasagna packed lunch and enjoy the moment. You talk with some of your other coworkers, and time passes quickly
+
+You return to work and finish your reports for the day with a lighter heart
+
+At the end of your shift, you return home and take a deep breath
+
+do SceneController.change_background("res://Visual Novel Romance/files/room1.png")
+
+do SceneController.show_character("Sprite5")
+
+Ello is there
+
+You aren't particularly excited about interacting with Ello, but you need to
+
+{{GameData.player_name}}: Any news?
+
+Ello: I think so. I'm making progress regarding people's dreams. It's not a milestone, but it's a beginning
+
+Ello: I can't find your cat, but he seems to be making friends in the forest
+
+Ello: In fact, I found some individuals who were already in a serious stage of disturbance. Helping animals in that condition is no longer so simple
+
+{{GameData.player_name}}: But there's still hope for them, right?
+
+Ello: In short, yes, but it's a slow process, and there's no guarantee the individual will return to a healthy state
+
+Ello: If their condition worsens, they may develop lasting effects
+
+{{GameData.player_name}}: My goodness... That's concerning
+
+- Ask about the dream
+  => ask_more
+
+- Make dinner and study
+  => dinner
+
+~ ask_more
+do SaveManager.set_checkpoint("ask_more")
+{{GameData.player_name}}: What was that monster? Where did it come from?
+
+Ello: It was Cerberus, a wolf focused on draining the energy of dreamers and leaving them exhausted. That makes it stronger
+
+{{GameData.player_name}}: And why did it choose me as its target?
+
+Ello: Well... To test you and me
+
+Ello: Someone who doesn't dream is the beginning of what they need to accomplish. Since you know I exist, they focus on you so I spend more time protecting you instead of other people, allowing them to eventually take control of your mind if I don't protect you well enough
+
+do SceneController.hide_character("Sprite5")
+
+~ dinner
+You begin making dinner with whatever you have in the refrigerator so you don't have to think too much about everything... It's not particularly effective, but it seems like the best option for you
+
+After finishing dinner and preparing your lunch for the next day, you plan to study
+
+It won't be long before a test for that unbearable subject
+
+You sit at your desk in the bedroom and begin researching and taking practice tests... You get tired quickly
+
+But you study a little longer and eventually fall asleep
+
+=> dreams
+
+~ dreams
+do SaveManager.set_checkpoint("dreams")
+do MusicManager.play_music("res://Visual Novel Romance/music/music1.ogg")
+do SceneController.hide_character("Sprite5")
+do SceneController.change_background("res://Visual Novel Romance/files/img13.png")
+
+...You are talking to your sister in a childhood memory
+
+do SceneController.show_character("Sprite6")
+Sister: Little one, have you figured out what your biggest dream is?
+
+My biggest dream?
+=> what_dreams
+
+I think I have, Sister.
+=> my_dreams
+
+~ what_dreams
+do SaveManager.set_checkpoint("what_dreams")
+{{GameData.player_name}}: I don't really remember what my childhood dreams were...
+
+Sister: Don't worry, little one. One day, you'll figure it out.
+
+Sister: Nothing else comes to mind?
+
+{{GameData.player_name}}: I don't know... I don't think I really believe in that stuff.
+
+Sister: ...One day, you'll understand how important dreams really are.
+=> doubt
+
+~ my_dreams
+do SaveManager.set_checkpoint("my_dreams")
+
+{{GameData.player_name}}: I want to create a world where animals and people can live vibrant, exciting lives... So, maybe an artist?
+
+Sister: That's incredible. Never give up on your dream, no matter what happens.
+=> doubt
+
+~ doubt
+do SaveManager.set_checkpoint("doubt")
+
+{{GameData.player_name}}: Sister, how do I know if my dream is a good one?
+
+Sister: When it brings you peace and fulfillment, you'll know you're on the right path.
+
+{{GameData.player_name}}: What if I want to be so many things? Can I become anything I want?
+
+Sister: You might have a passion for many things, but try to focus on one at a time—otherwise, you might end up lost.
+
+Sister: Life is about making choices on what truly matters. Sometimes we have to hold onto certain things and let others go.
+
+{{GameData.player_name}}: So, Sister... what dream did you choose?
+
+Sister: To build a happy family. Growing up wasn't easy for us, so nothing mattered more to me than creating a place we could truly call home.
+
+Sister: And now that dream is coming true—I have all of you, my family, right here with me.
+
+{{GameData.player_name}}: And what do you do once your dream comes true?
+
+Sister: Now? Now I get to help the rest of my family achieve theirs.
+
+=> continuation
+
+~ continuation
+do SaveManager.set_checkpoint("continuation")
+do SceneController.fade_to_black()
+do SceneController.hide_character("Sprite6")
+do MusicManager.play_music_for("res://Visual Novel Romance/music/alarm-clock.mp3", 1.0)
+do SceneController.change_background("res://Visual Novel Romance/files/room1.png")
+
+
+{{GameData.player_name}}: Hmm... What a strange dream... It wasn't horrifying
+
+{{GameData.player_name}}: I wonder where Ello is
+
+{{GameData.player_name}}: It's awfully quiet here
+
+You call out for Ello, but receive no answer
+
+But then Felix appears through the little passageway in the door and meows
+
+{{GameData.player_name}}: Felix! How did you get here?
+
+You quickly get up and go to hug your cat
+
+do MusicManager.play_music("res://Visual Novel Romance/music/music3-v1.mp3")
+
+But when you touch him, he evaporates
+
+You freeze in shock, standing still as you look around in silence
+
+You get up to open the door and search for Ello, but the door evaporates too
+
+Nothing is real
+
+Then the phone in your pocket rings
+
+You answer suspiciously
+do MusicManager.play_music("res://Visual Novel Romance/music/music3-v1.mp3")
+???: Hello?
+
+{{GameData.player_name}}: Who is this?
+
+???: You can call me Chimera
+
+{{GameData.player_name}}: What do you want? What's happening?
+
+Chimera: Nothing much... You really looked happy to see Felix. What a shame
+
+Chimera: I wonder where he could be? I don't have good news...
+
+You hear someone calling out. It's Ello's voice, but you can't see him anywhere
+
+Ello: Wake up! Don't believe anything. This is a nightmare, it's not real
+
+Ello: I can't wake you up, but this is your dream, so change it however you want
+
+You become thoughtful as Chimera continues making small talk on the phone, telling you that you are going to find the worst
+
+Ello: Chimera can't hurt you. I'm protecting you
+
+You smash the phone and head into the hallway
+
+do SceneController.change_background("res://Visual Novel Romance/files/img12.png")
+
+You find an endless number of doors
+
+You can still hear Chimera
+
+Chimera: None of them is the exit
+
+You enter the door on the left. You can't see anything because it's dark, so you close the door and find yourself in the same hallway again
+
+do SceneController.change_background("res://Visual Novel Romance/files/img11.png")
+
+You enter through the door on the right, and it is dark as well. You close the door and find your family, all of them with red eyes. Some have hateful expressions, while others look sad
+
+Voices: Where were you? We were waiting for you, and you never came
+
+Voices: Get us out of here... Are you going to abandon us? Leave us here to suffer?
+
+You don't approach them, and you become increasingly desperate
+
+You begin to think about what all of this means... Then you return to the previous hallway and close the door
+
+do SceneController.change_background("res://Visual Novel Romance/files/img12.png")
+
+{{GameData.player_name}}: The doors are useless. They're just a distraction
+
+You continue onward, sometimes running and sometimes walking, toward the end of the hallway
+
+But you still can't find an exit
+
+So you close your eyes and take a deep breath. You see many colors in the darkness
+
+Nothing special happens, so you think of an exit door... An exit door
+
+You see it and move toward it...
+
+You open it, and the darkness is dispelled by light...
+
+do SceneController.fade_to_black()
+do SceneController.change_background("res://Visual Novel Romance/files/fundo-branco-png.png")
+
+Thank you for playing
+
+Demo end
+
+The story continues in the full game
+
+click the logout button
 
 => END
 
-=> END
+~ not_go
+do SceneController.hide_character("Sprite5")
+do SaveManager.set_checkpoint("not_go")
+Well, now it's time...
 
-=> END
+- Look for Felix
+  => look_for
 
-=> END
+~ look_for
+do SaveManager.set_checkpoint("look_for")
+You get ready and even grab the cat carrier to prevent him from running away again
+
+You leave the house, cross the street, and reach the edge of the forest
+
+do SceneController.change_background("res://Visual Novel Romance/files/img5.png")
+
+do MusicManager.play_music("res://Visual Novel Romance/music/music6.mp3")
+
+You begin exploring again and hear birds singing
+
+You mark the trails you plan to follow on your phone's map
+
+so you can search for the cat...
+
+You begin your journey and see many wild animals in the forest. In general, they don't pose any threat to you
+
+At one point, you decide to sit down and rest. You pull out a small bottle of water to hydrate yourself and a snack
+
+When you are almost finished with your snack, you hear a noise
+
+do SceneController.show_character("Sprite4")
+
+It's a deer, nothing unusual... but there is something strange about it
+
+You continue looking at it, trying to identify what is wrong, and then you notice
+
+it has red eyes
+
+It stares at you, makes a noise, and charges toward you
+
+Luckily, it misses, and you manage to move away a little... Think of a way to escape
+
+- Quickly climb a tree
+  => to_climb
+
+- Run
+  => run
+
+~ run
+do SaveManager.set_checkpoint("run")
+do SceneController.hide_character("Sprite4")
+You retrace part of the path you already took, trying to lose the deer. After a few minutes, you manage to escape it
+
+You wonder whether you should search along another route or if it's already time to return home and get ready for work
+
+You return home, leave your belongings there, and prepare to go to work
+
+=> go_work2
+
+~ to_climb
+do SaveManager.set_checkpoint("to_climb")
+You climb a not-too-tall tree while narrowly escaping the deer. It tries to reach you but can't
+
+Then it simply stares at you, and you begin to wonder how long this will last...
+
+The longer you stay, the more time you lose, so you begin wondering how Ello came to this forest in the first place, and why a forest instead of somewhere he is worshiped, like a church
+
+After a few minutes, you try throwing the rest of your snack at the deer to see if it will at least become distracted, and it works
+
+The deer approaches to eat the snack, and at that moment you try climbing down behind the tree. When your feet touch the ground, you run to grab the cat carrier that was lying on the ground and run
+
+do SceneController.hide_character("Sprite4")
+You retrace your path
+
+And decide to return home immediately, before another animal appears and attacks you
+
+You return home, leave your things there, and prepare to go to work
+
+=> go_work2
 
 ~ END

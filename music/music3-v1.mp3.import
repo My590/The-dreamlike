@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cx1wcanex5rwy"
+path="res://.godot/imported/music3-v1.mp3-066563da487ce603534f39a9cef7d33e.mp3str"
+
+[deps]
+
+source_file="res://Visual Novel Romance/music/music3-v1.mp3"
+dest_files=["res://.godot/imported/music3-v1.mp3-066563da487ce603534f39a9cef7d33e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
