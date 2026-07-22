@@ -10,18 +10,18 @@ It seems like the game isn’t proportioned properly according to the screen siz
 I only made the Windows version because apparently more things are needed to export to Android.  
 For the export, you need to download a few things in "Editor" and then in "Manage Export Templates", and then you can actually change which type of export you can do.
 
-## ✍️ How did the game come about? 
+## How did the game come about? 
  I’ve been watching gameplays and playing some Visual Novels, and I used those experiences to come up with the game idea for a Game Design course I took and to participate in a Game Jam I joined.  
 Through that, I got to know Macondo, which inspired me to take my game off the paper.  
 So, I started programming the basic structure of the game, like the start screen and the screen that comes after clicking "Start." Then I kept adding elements to see what worked and what didn’t. After that, I started creating the story and the drawings.
 
-## 😼 About
-I developed the game using Godot with the Dialogue Manager plugin, and I did the drawings/animations in Krita, the sound effects in general came from Pixabay. I finally made my dream of creating a game come true. The game has the option of Portuguese and English. 
+## About
+I developed the game using Godot with the Dialogue Manager plugin, and I did the drawings/animations in Krita, the sound effects in general came from Pixabay. The game has the option of Portuguese and English. 
 
 ## Story
 You are a college student who has a normal life with a cat. One day, suddenly, it runs away and you try to find it. During this journey, you come across mystical beings, and they influence the situation, but not only that, they determine the end or continuation of the life you have.
 
-## ✨ Inspirations
+## Inspirations
 * *Hollow Knight*
 * *Fnaf 4*
 * *Deltaroune*
