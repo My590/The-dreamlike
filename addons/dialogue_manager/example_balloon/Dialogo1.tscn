@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://py7wu3dgkvk3"]
+[gd_scene format=3 uid="uid://bvrrypbl7lhdc"]
 
-[ext_resource type="Script" uid="uid://d1wt4ma6055l8" path="res://Visual Novel Romance/addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_kjobx"]
-[ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://Visual Novel Romance/addons/dialogue_manager/dialogue_label.tscn" id="2_604ia"]
-[ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://Visual Novel Romance/addons/dialogue_manager/dialogue_responses_menu.gd" id="3_63d88"]
+[ext_resource type="Script" uid="uid://d1wt4ma6055l8" path="res://Visual Novel Romance/addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_2flf4"]
+[ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://Visual Novel Romance/addons/dialogue_manager/dialogue_label.tscn" id="2_tksm8"]
+[ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://Visual Novel Romance/addons/dialogue_manager/dialogue_responses_menu.gd" id="3_qgurr"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -99,22 +99,21 @@ _data = {
 &"progress": SubResource("Animation_qkmqt")
 }
 
-[node name="ExampleBalloon" type="CanvasLayer" unique_id=56251019]
+[node name="ExampleBalloon" type="CanvasLayer" unique_id=354862218]
 layer = 100
-script = ExtResource("1_kjobx")
+script = ExtResource("1_2flf4")
 
-[node name="Balloon" type="Control" parent="." unique_id=1408566391]
+[node name="Balloon" type="Control" parent="." unique_id=1401056641]
 unique_name_in_owner = true
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 67.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_qq3yp")
 
-[node name="MarginContainer" type="MarginContainer" parent="Balloon" unique_id=1457098074]
+[node name="MarginContainer" type="MarginContainer" parent="Balloon" unique_id=1300812996]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -124,22 +123,22 @@ offset_top = -219.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="Balloon/MarginContainer" unique_id=510857165]
+[node name="PanelContainer" type="PanelContainer" parent="Balloon/MarginContainer" unique_id=1416328527]
 clip_children = 2
 layout_mode = 2
 mouse_filter = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="Balloon/MarginContainer/PanelContainer" unique_id=21228162]
+[node name="MarginContainer" type="MarginContainer" parent="Balloon/MarginContainer/PanelContainer" unique_id=240934274]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer" unique_id=98316705]
+[node name="HBoxContainer" type="HBoxContainer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer" unique_id=1999455728]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer" unique_id=1424597690]
+[node name="VBoxContainer" type="VBoxContainer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer" unique_id=536225674]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="CharacterLabel" type="RichTextLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer" unique_id=115883255]
+[node name="CharacterLabel" type="RichTextLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1294985791]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
@@ -149,26 +148,26 @@ text = "Character"
 fit_content = true
 scroll_active = false
 
-[node name="DialogueLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer" unique_id=175263117 instance=ExtResource("2_604ia")]
+[node name="DialogueLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1890812186 instance=ExtResource("2_tksm8")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 text = "Dialogue..."
 
-[node name="Control" type="Control" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer" unique_id=1735138865]
+[node name="Control" type="Control" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer" unique_id=1604976575]
 custom_minimum_size = Vector2(20, 10)
 layout_mode = 2
 size_flags_vertical = 8
 
-[node name="Progress" type="Polygon2D" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/Control" unique_id=1375801960]
+[node name="Progress" type="Polygon2D" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/Control" unique_id=970760186]
 unique_name_in_owner = true
 polygon = PackedVector2Array(0, 0, 10, 10, 20, 0)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/Control" unique_id=2017889626]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/Control" unique_id=1279238654]
 libraries/ = SubResource("AnimationLibrary_1337t")
 autoplay = &"progress"
 
-[node name="ResponsesMenu" type="VBoxContainer" parent="Balloon" unique_id=994835077 node_paths=PackedStringArray("response_template")]
+[node name="ResponsesMenu" type="VBoxContainer" parent="Balloon" unique_id=1657569350 node_paths=PackedStringArray("response_template")]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 8
@@ -185,14 +184,14 @@ grow_vertical = 2
 size_flags_vertical = 8
 theme_override_constants/separation = 2
 alignment = 1
-script = ExtResource("3_63d88")
+script = ExtResource("3_qgurr")
 response_template = NodePath("ResponseExample")
 
-[node name="ResponseExample" type="Button" parent="Balloon/ResponsesMenu" unique_id=1364204781]
+[node name="ResponseExample" type="Button" parent="Balloon/ResponsesMenu" unique_id=618884971]
 layout_mode = 2
 text = "Response example"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1834154705]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1936628267]
 unique_name_in_owner = true
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]

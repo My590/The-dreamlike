@@ -3,14 +3,14 @@ import "res://Visual Novel Romance/gd/Intro.gd" as snippets
 ~ start
 do MusicManager.play_music_for("res://Visual Novel Romance/music/alarm-clock.mp3", 2.0)
 do MusicManager.play_music("res://Visual Novel Romance/music/music1.ogg")
-{{GameData.player_name}}: Ugh... here we go again. Another day at university
-{{GameData.player_name}}: Felix, you came to sleep on top of me again
-{{GameData.player_name}}: Well, how can I start the day?
+{{GameData.player_name}}: Ugh... here we go again. Another day at university [ID:461A36_1DB06F]
+{{GameData.player_name}}: Felix, you came to sleep on top of me again [ID:461A36_90182D]
+{{GameData.player_name}}: Well, how can I start the day? [ID:461A36_B45121]
 
-- Have breakfast
+- Have breakfast [ID:461A36_6F23FA]
     => breakfast
 
-- Go back to sleep
+- Go back to sleep [ID:461A36_E4CF67]
     => sleep_more
 
 ~ breakfast
@@ -19,102 +19,102 @@ do SaveManager.set_checkpoint("breakfast")
 do GameData.morning_route = "breakfast"
 do SceneController.fade_to_black()
 
-You head to the kitchen to prepare your breakfast
+You head to the kitchen to prepare your breakfast [ID:461A36_FA6005]
 
 do SceneController.play_video("res://Visual Novel Romance/files/Breakfast_high.ogv")
 
-{{GameData.player_name}}: Nothing could be better than this
+{{GameData.player_name}}: Nothing could be better than this [ID:461A36_6192A7]
 
-Felix sits on the table beside you, staring at your breakfast as if he hasn't eaten in days
+Felix sits on the table beside you, staring at your breakfast as if he hasn't eaten in days [ID:461A36_113DE2]
 
-Despite his dramatic expression, he finished his own meal only a few minutes ago
+Despite his dramatic expression, he finished his own meal only a few minutes ago [ID:461A36_009442]
 
-After breakfast, you finish getting ready and head to the university
+After breakfast, you finish getting ready and head to the university [ID:461A36_CD75C2]
 
 do SceneController.stop_video()
 do SceneController.change_background("res://Visual Novel Romance/files/img2.png")
 
-When you arrive, you meet your friend from the History department.
+When you arrive, you meet your friend from the History department. [ID:461A36_7A8F9B]
 
 do SceneController.show_character("Sprite1")
 
-Gio: Hey, {{GameData.player_name}}. Do you remember my last study about local folklore? I found more information about the stories we used to hear when we were children
+Gio: Hey, {{GameData.player_name}}. Do you remember my last study about local folklore? I found more information about the stories we used to hear when we were children [ID:461A36_E57E16]
 
-You begin to remember the tales about dreams, where an Oneiric being protects the dreams of children and the world itself, keeping balance between them
+You begin to remember the tales about dreams, where an Oneiric being protects the dreams of children and the world itself, keeping balance between them [ID:461A36_FC21AE]
 
-The legend says that when people stop dreaming, the Oneirics lose their strength, leaving humanity vulnerable to the attacks of their greatest nightmares
+The legend says that when people stop dreaming, the Oneirics lose their strength, leaving humanity vulnerable to the attacks of their greatest nightmares [ID:461A36_7F7656]
 
-Gio: Well, according to the book I'm reading, these stories are ancient and connected to rituals and ancestral temples
+Gio: Well, according to the book I'm reading, these stories are ancient and connected to rituals and ancestral temples [ID:461A36_797C3E]
 
-Gio: This book suggests that, if those practices truly worked, people could reach a state where they were able to control their dreams. Dreams could even become a way to understand the present or glimpse the future
+Gio: This book suggests that, if those practices truly worked, people could reach a state where they were able to control their dreams. Dreams could even become a way to understand the present or glimpse the future [ID:461A36_C773C5]
 
-Gio: I'm going to use this book for my research project. What did you think about it?
+Gio: I'm going to use this book for my research project. What did you think about it? [ID:461A36_CBA733]
 
-- Ask more about it
+- Ask more about it [ID:461A36_64E24E]
   => about
 
-- Remember the childhood tales
+- Remember the childhood tales [ID:461A36_A83E08]
   => tales
 
 ~ about
 do SaveManager.set_checkpoint("about")
 
-{{GameData.player_name}}: That's incredible. Is this book from the university? I'd love to hear more about your research
+{{GameData.player_name}}: That's incredible. Is this book from the university? I'd love to hear more about your research [ID:461A36_EB163B]
 
-Gio: Actually, I borrowed it from a small chapel not far from here. There are plenty of academic books on the subject, but I wanted firsthand accounts from people who actually lived through those experiences
+Gio: Actually, I borrowed it from a small chapel not far from here. There are plenty of academic books on the subject, but I wanted firsthand accounts from people who actually lived through those experiences [ID:461A36_81BAB0]
 
-Gio: That's what makes this one so fascinating. It was written by a monk who documented his entire journey, from his first encounters with those practices to the day he became a monk himself
+Gio: That's what makes this one so fascinating. It was written by a monk who documented his entire journey, from his first encounters with those practices to the day he became a monk himself [ID:461A36_131995]
 
-The two of you continue talking until it's time for class
+The two of you continue talking until it's time for class [ID:461A36_0CBE6D]
 
-Once inside the classroom, you struggle to stay awake. After managing to copy a few notes, the lecture finally comes to an end
+Once inside the classroom, you struggle to stay awake. After managing to copy a few notes, the lecture finally comes to an end [ID:461A36_49ED75]
 
-As everyone begins to leave, Gio catches up with you
+As everyone begins to leave, Gio catches up with you [ID:461A36_D10BD0]
 
-Gio: Heading home? Want to walk together?
+Gio: Heading home? Want to walk together? [ID:461A36_EF8DFE]
 
-You nod, and the two of you leave the university side by side
+You nod, and the two of you leave the university side by side [ID:461A36_17EB14]
 
 => work
 
 ~ tales
 do SaveManager.set_checkpoint("tales")
 
-{{GameData.player_name}}: So... the stories our parents used to tell us actually came from this folklore?
+{{GameData.player_name}}: So... the stories our parents used to tell us actually came from this folklore? [ID:461A36_77128B]
 
-{{GameData.player_name}}: There were so many of them, but I can barely remember any now
+{{GameData.player_name}}: There were so many of them, but I can barely remember any now [ID:461A36_B7226D]
 
-Gio: That's right. Over time, most people simply forgot them. Even so, many older generations still hold on to those legends
+Gio: That's right. Over time, most people simply forgot them. Even so, many older generations still hold on to those legends [ID:461A36_8BB3BC]
 
-Gio: We even have festivals and traditions that keep the stories alive, though they're nothing like they used to be
+Gio: We even have festivals and traditions that keep the stories alive, though they're nothing like they used to be [ID:461A36_E24D94]
 
-{{GameData.player_name}}: I loved listening to those stories when I was a kid. But eventually everyone stopped talking about them
+{{GameData.player_name}}: I loved listening to those stories when I was a kid. But eventually everyone stopped talking about them [ID:461A36_992488]
 
-{{GameData.player_name}}: I remember attending ceremonies where people encouraged us to treasure our dreams and never give up on them
+{{GameData.player_name}}: I remember attending ceremonies where people encouraged us to treasure our dreams and never give up on them [ID:461A36_1385B1]
 
-Gio: That's one of the core beliefs behind these traditions
+Gio: That's one of the core beliefs behind these traditions [ID:461A36_DBCB22]
 
-Gio: Dreams are said to reveal who we truly are... or, sometimes, the parts of ourselves we're trying to hide
+Gio: Dreams are said to reveal who we truly are... or, sometimes, the parts of ourselves we're trying to hide [ID:461A36_A9FF05]
 
-Gio: To stop dreaming, or to stop pursuing your goals, is like turning your back on your own identity
+Gio: To stop dreaming, or to stop pursuing your goals, is like turning your back on your own identity [ID:461A36_847A38]
 
-{{GameData.player_name}}: That's... actually a really interesting way of looking at it
+{{GameData.player_name}}: That's... actually a really interesting way of looking at it [ID:461A36_1698F6]
 
-{{GameData.player_name}}: I'd better get going. My class has probably already started
+{{GameData.player_name}}: I'd better get going. My class has probably already started [ID:461A36_E19B7F]
 
-Gio: See you around.
+Gio: See you around. [ID:461A36_7678AC]
 do SceneController.hide_character("Sprite1")
 
-You make your way to class, though staying awake proves to be a challenge
+You make your way to class, though staying awake proves to be a challenge [ID:461A36_C1A776]
 
-After scribbling down a few notes, the lecture finally ends
+After scribbling down a few notes, the lecture finally ends [ID:461A36_419A90]
 
-As you're leaving campus, Gio catches up with you
+As you're leaving campus, Gio catches up with you [ID:461A36_4D27BF]
 do SceneController.show_character("Sprite1")
 
-Gio: Ready to head home?
+Gio: Ready to head home? [ID:461A36_6D0714]
 
-You agree, and the two of you walk away from the university together
+You agree, and the two of you walk away from the university together [ID:461A36_EE8152]
 
 do SceneController.hide_character("Sprite1")
 
@@ -123,39 +123,39 @@ do SceneController.hide_character("Sprite1")
 ~ sleep_more
 do SaveManager.set_checkpoint("sleep_more")
 do GameData.morning_route = "sleep"
-{{GameData.player_name}}: Just five more minutes.
+{{GameData.player_name}}: Just five more minutes. [ID:461A36_9AE402]
 
 do SceneController.sleep_sequence()
 do MusicManager.play_music("res://Visual Novel Romance/music/music1.ogg")
-Some time later...
+Some time later... [ID:461A36_59A9C2]
 
-{{GameData.player_name}}: Wait... What time is it?!
+{{GameData.player_name}}: Wait... What time is it?! [ID:461A36_AAA734]
 
-You hurriedly grab the first clothes you can find, only to notice they're covered in Felix's fur. With no time to waste, you throw on a darker outfit to hide it as best as you can
+You hurriedly grab the first clothes you can find, only to notice they're covered in Felix's fur. With no time to waste, you throw on a darker outfit to hide it as best as you can [ID:461A36_2CA862]
 
-You rush out of the house and make your way to the university, already running late
+You rush out of the house and make your way to the university, already running late [ID:461A36_558852]
 
 do SceneController.change_background("res://Visual Novel Romance/files/img2.png")
-By the time you arrive, class has already begun. You quietly take your seat and start taking notes
+By the time you arrive, class has already begun. You quietly take your seat and start taking notes [ID:461A36_53178A]
 
-After class, you run into Mary
+After class, you run into Mary [ID:461A36_F9DAA0]
 do SceneController.show_character("Sprite2")
 
-Mary: Hey. How have you been?
+Mary: Hey. How have you been? [ID:461A36_7F7D36]
 
-- Not so well
+- Not so well [ID:461A36_2526F5]
   => not_well
 
-- I've been doing alright
+- I've been doing alright [ID:461A36_34B667]
   => good
 
 ~ not_well
 do SaveManager.set_checkpoint("not_well")
-{{GameData.player_name}}: I didn't sleep very well. I accidentally fell back asleep this morning and ended up running late... But enough about me. How have you been?
+{{GameData.player_name}}: I didn't sleep very well. I accidentally fell back asleep this morning and ended up running late... But enough about me. How have you been? [ID:461A36_02921C]
 
-Mary: I've been really busy lately, but I'm doing well
+Mary: I've been really busy lately, but I'm doing well [ID:461A36_4870B4]
 
-{{GameData.player_name}}: I'm glad to hear that. I know how it is. Between classes, research, and assignments, there's always something to do
+{{GameData.player_name}}: I'm glad to hear that. I know how it is. Between classes, research, and assignments, there's always something to do [ID:461A36_D90DD1]
 
 => work
 
@@ -163,9 +163,9 @@ Mary: I've been really busy lately, but I'm doing well
 
 do SaveManager.set_checkpoint("good")
 
-{{GameData.player_name}}: I've been doing alright, all things considered. You're heading home through Main Avenue, right?
+{{GameData.player_name}}: I've been doing alright, all things considered. You're heading home through Main Avenue, right? [ID:461A36_FAD90F]
 
-Mary: Yeah. We can walk together if you'd like
+Mary: Yeah. We can walk together if you'd like [ID:461A36_30821A]
 
 
 => work
@@ -174,45 +174,45 @@ Mary: Yeah. We can walk together if you'd like
 
 if GameData.morning_route == "breakfast":
 	do SceneController.show_character("Sprite1")
-	The two of you leave campus together, chatting about extracurricular credits, hobbies, and upcoming assignments
-	Eventually, you say goodbye and enter a nearby office building
+	The two of you leave campus together, chatting about extracurricular credits, hobbies, and upcoming assignments [ID:461A36_02C59D]
+	Eventually, you say goodbye and enter a nearby office building [ID:461A36_37BB0A]
 	do SceneController.hide_character("Sprite1")
 	
 if GameData.morning_route == "sleep":
 	do SceneController.show_character("Sprite2")
-	The two of you leave campus together, chatting about extracurricular credits, hobbies, and upcoming assignments
-	Eventually, you say goodbye and enter a nearby office building
+	The two of you leave campus together, chatting about extracurricular credits, hobbies, and upcoming assignments [ID:461A36_73C3AA]
+	Eventually, you say goodbye and enter a nearby office building [ID:461A36_359839]
 	do SceneController.hide_character("Sprite2")
 
 
-It's your workplace
+It's your workplace [ID:461A36_4D9594]
 do SceneController.fade_to_black()
 do SceneController.change_background("res://Visual Novel Romance/files/img4.png")
 
-You settle into your desk and spend the next few hours working, occasionally chatting with your coworkers
+You settle into your desk and spend the next few hours working, occasionally chatting with your coworkers [ID:461A36_4EEC1A]
 
-After hours of typing, you decide you need a short break, even though it's not lunchtime yet
+After hours of typing, you decide you need a short break, even though it's not lunchtime yet [ID:461A36_BAE028]
 
-- Hide in the restroom and check your phone
+- Hide in the restroom and check your phone [ID:461A36_F411F3]
   => restroom
 
-- Grab a cup of coffee.
+- Grab a cup of coffee. [ID:461A36_C4A7CB]
   => coffee
 
-- Take a quick nap.
+- Take a quick nap. [ID:461A36_4453CB]
   => nap
 
-- Pretend to be working.
+- Pretend to be working. [ID:461A36_907CF4]
   => pretend
 
 ~ restroom
 do SaveManager.set_checkpoint("restroom")
-You spend about fifteen minutes in the restroom scrolling through your phone.
+You spend about fifteen minutes in the restroom scrolling through your phone. [ID:461A36_722F9B]
 
-- Message a friend.
+- Message a friend. [ID:461A36_7ED479]
   => message
 
-- Keep scrolling through social media.
+- Keep scrolling through social media. [ID:461A36_16A8E4]
   => feed
 
 ~ message
@@ -220,24 +220,24 @@ do SaveManager.set_checkpoint("message")
 if GameData.morning_route == "breakfast":
 
 	do GameData.last_person_texted = "gio"
-	You decide to send Gio a quick message
+	You decide to send Gio a quick message [ID:461A36_BB880B]
 
 	=> after_message
 
 elif GameData.morning_route == "sleep":
 
 	do GameData.last_person_texted = "mary"
-	You decide to send Mary a quick message
+	You decide to send Mary a quick message [ID:461A36_246341]
 
 	=> after_message
 
 ~ after_message
 do SaveManager.set_checkpoint("after_message")
-You wait for a reply
+You wait for a reply [ID:461A36_E99FB4]
 
-Nothing.
+Nothing. [ID:461A36_48674C]
 
-With a quiet sigh, you put your phone away and return to work. Before long, your shift comes to an end.
+With a quiet sigh, you put your phone away and return to work. Before long, your shift comes to an end. [ID:461A36_C4A04B]
 
 => go_home
 
@@ -245,11 +245,11 @@ With a quiet sigh, you put your phone away and return to work. Before long, your
 
 ~ feed
 do SaveManager.set_checkpoint("feed")
-You keep scrolling longer than you intended.
+You keep scrolling longer than you intended. [ID:461A36_F3B3CD]
 
-By the time you put your phone away, you feel even more exhausted than before
+By the time you put your phone away, you feel even more exhausted than before [ID:461A36_18A899]
 
-You finish your shift almost on autopilot, and before you realize it, you're already standing at your front door
+You finish your shift almost on autopilot, and before you realize it, you're already standing at your front door [ID:461A36_BA9C32]
 
 => go_home
 
@@ -258,46 +258,46 @@ do SaveManager.set_checkpoint("coffee")
 
 %50
 	do GameData.change_health(-5)
-	The coffee is much hotter than expected, and you burn your tongue
+	The coffee is much hotter than expected, and you burn your tongue [ID:461A36_FE212B]
 
-Feeling a little more awake, you return to work and finish the rest of your shift
+Feeling a little more awake, you return to work and finish the rest of your shift [ID:461A36_EE887D]
 
 => go_home
 
 %30
-	The coffee tastes surprisingly bitter.
+	The coffee tastes surprisingly bitter. [ID:461A36_7DD09C]
 
-Feeling a little more awake, you return to work and finish the rest of your shift.
+Feeling a little more awake, you return to work and finish the rest of your shift. [ID:461A36_126028]
 
 => go_home
 
 %20
-	It's actually a really good cup of coffee.
+	It's actually a really good cup of coffee. [ID:461A36_77FF73]
 
-Feeling a little more awake, you return to work and finish the rest of your shift.
+Feeling a little more awake, you return to work and finish the rest of your shift. [ID:461A36_486077]
 
 => go_home
 
 ~ nap
 do SaveManager.set_checkpoint("nap")
 do SceneController.fade_to_black()
-You close your eyes for what feels like only a minute.
+You close your eyes for what feels like only a minute. [ID:461A36_80D014]
 
-When you wake up, a coworker is already complaining that you've been asleep.
+When you wake up, a coworker is already complaining that you've been asleep. [ID:461A36_58C025]
 
-You brush it off, finish your work, and head home after your shift.
+You brush it off, finish your work, and head home after your shift. [ID:461A36_51EDF8]
 
 => go_home
 
 ~ pretend
 do SaveManager.set_checkpoint("pretend")
-Luckily, you'd already finished most of your work.
+Luckily, you'd already finished most of your work. [ID:461A36_60F7FD]
 
-The rest of the afternoon is spent looking busy whenever someone walks by.
+The rest of the afternoon is spent looking busy whenever someone walks by. [ID:461A36_CBC42D]
 
-You even realize you could pretend to finish the same project tomorrow.
+You even realize you could pretend to finish the same project tomorrow. [ID:461A36_A80416]
 
-Once your shift ends, you head home.
+Once your shift ends, you head home. [ID:461A36_010840]
 
 => go_home
 
@@ -306,47 +306,47 @@ do SaveManager.set_checkpoint("go_home")
 do SceneController.fade_to_black()
 do SceneController.change_background("res://Visual Novel Romance/files/img0.png")
 
-As you slowly open the front door, you accidentally drop your keys. In that brief moment, Felix slips outside.
+As you slowly open the front door, you accidentally drop your keys. In that brief moment, Felix slips outside. [ID:461A36_675694]
 
-{{GameData.player_name}}: Felix, why?! You've never done this before. He ran into the forest... It's dangerous. I have to find him before night falls
+{{GameData.player_name}}: Felix, why?! You've never done this before. He ran into the forest... It's dangerous. I have to find him before night falls [ID:461A36_E2F50C]
 
-You head into the forest, but there are no clear signs of where Felix went. No strange noises, no meows... nothing
+You head into the forest, but there are no clear signs of where Felix went. No strange noises, no meows... nothing [ID:461A36_31860B]
 
 do SceneController.fade_in()
 do SceneController.change_background("res://Visual Novel Romance/files/img5.png")
 
-You keep following a narrow trail until you come across a glowing creature.
+You keep following a narrow trail until you come across a glowing creature. [ID:461A36_A6CBC0]
 
 do SceneController.show_character("Sprite5")
 
-???: Run! It's coming!
+???: Run! It's coming! [ID:461A36_BA2B75]
 
-The glowing being looks exhausted and terrified
+The glowing being looks exhausted and terrified [ID:461A36_89DDEC]
 
-- Ignore and keep looking for Felix
+- Ignore and keep looking for Felix [ID:461A36_C367DF]
 	=> search
 
-- Ask what's happening
+- Ask what's happening [ID:461A36_42D27E]
 	=> to_question
 
 ~ search
 do SaveManager.set_checkpoint("search")
 
-You carefully scan the glowing creature and the surrounding area, searching for any sign of where Felix might have gone. The creature suddenly speaks.
+You carefully scan the glowing creature and the surrounding area, searching for any sign of where Felix might have gone. The creature suddenly speaks. [ID:461A36_992C44]
 
-???: What are you doing? We need to find shelter before the creatures of darkness arrive.
+???: What are you doing? We need to find shelter before the creatures of darkness arrive. [ID:461A36_584902]
 
-{{GameData.player_name}}: This has to be some kind of prank... So, where's the hidden camera?
+{{GameData.player_name}}: This has to be some kind of prank... So, where's the hidden camera? [ID:461A36_B265A7]
 
 do MusicManager.play_music_for("res://Visual Novel Romance/music/music4.mp3", 1.0)
 
-{{GameData.player_name}}: Very funny... ha... ha...
+{{GameData.player_name}}: Very funny... ha... ha... [ID:461A36_AD63F5]
 
 => beast_appears
 
 ~ to_question
 do SaveManager.set_checkpoint("to_question")
-{{GameData.player_name}}: Run from what? What are you?
+{{GameData.player_name}}: Run from what? What are you? [ID:461A36_99C233]
 
 do MusicManager.play_music_for("res://Visual Novel Romance/music/music4.mp3", 1.0)
 
@@ -356,99 +356,99 @@ do SceneController.change_background("res://Visual Novel Romance/files/img5.png"
 do MusicManager.play_music("res://Visual Novel Romance/music/music3-v1.mp3")
 do SceneController.show_character("Sprite3")
 
-[shake rate=20 level=10]Your heart pounds as your entire body begins to shake.[/shake]
+[shake rate=20 level=10]Your heart pounds as your entire body begins to shake.[/shake] [ID:461A36_16B9E6]
 
- The beast lunges toward the glowing being, trying to seize it. The creature narrowly escapes and flies straight toward you.
+ The beast lunges toward the glowing being, trying to seize it. The creature narrowly escapes and flies straight toward you. [ID:461A36_41E160]
 
-???: Run!!!
+???: Run!!! [ID:461A36_81F525]
 
-The two of you sprint back toward the road. You rush inside your house in a panic, only to realize the glowing being has followed you.
+The two of you sprint back toward the road. You rush inside your house in a panic, only to realize the glowing being has followed you. [ID:461A36_115F42]
 do SceneController.hide_character("Sprite3")
 do SceneController.fade_to_black()
 do SceneController.change_background("res://Visual Novel Romance/files/fundo-branco-png.png")
 
-{{GameData.player_name}}: This has to be some kind of nightmare... Or maybe I'm losing my mind.
+{{GameData.player_name}}: This has to be some kind of nightmare... Or maybe I'm losing my mind. [ID:461A36_099151]
 
-???: Thank you for giving me shelter, Dreamer.
+???: Thank you for giving me shelter, Dreamer. [ID:461A36_4575A2]
 
-{{GameData.player_name}}: ...
+{{GameData.player_name}}: ... [ID:461A36_E4174F]
 
-{{GameData.player_name}}: By the Goddess... WHAT WAS THAT?!
+{{GameData.player_name}}: By the Goddess... WHAT WAS THAT?! [ID:461A36_40B9EE]
 
-???: My name is Ello.
+???: My name is Ello. [ID:461A36_749EEF]
 
-Ello: I am a guardian of dreams. My duty is to protect the dreams of every living soul.
+Ello: I am a guardian of dreams. My duty is to protect the dreams of every living soul. [ID:461A36_C5840B]
 
-Ello: I was watching over people's dreams, but little by little... there were fewer dreams left to protect.
+Ello: I was watching over people's dreams, but little by little... there were fewer dreams left to protect. [ID:461A36_7EEF01]
 
-Ello: So I decided to come here, hoping I could help restore people's dreams. But unfortunately, the nightmares had the same idea.
+Ello: So I decided to come here, hoping I could help restore people's dreams. But unfortunately, the nightmares had the same idea. [ID:461A36_868355]
 
-Ello: The beasts born from nightmares have taken physical form.
+Ello: The beasts born from nightmares have taken physical form. [ID:461A36_618F52]
 
-{{GameData.player_name}}: Wait... You mean like the stories I used to hear when I was a kid?
+{{GameData.player_name}}: Wait... You mean like the stories I used to hear when I was a kid? [ID:461A36_DC7E30]
 
-Ello: I suppose so. Every culture has its own way of describing the beings who watch over dreams.
+Ello: I suppose so. Every culture has its own way of describing the beings who watch over dreams. [ID:461A36_E0DF49]
 
-Ello: The beast chasing me wanted my powers. It won't stop until it devours every dream that's left.
+Ello: The beast chasing me wanted my powers. It won't stop until it devours every dream that's left. [ID:461A36_EB7D96]
 
-Ello: I think we're safe here. Those creatures thrive in darkness. It's easier for them to twist what people see, filling the living with fear before tormenting them in their nightmares.
+Ello: I think we're safe here. Those creatures thrive in darkness. It's easier for them to twist what people see, filling the living with fear before tormenting them in their nightmares. [ID:461A36_9B61BC]
 
-Ello: I'm worried about the animals still trapped in the forest...
+Ello: I'm worried about the animals still trapped in the forest... [ID:461A36_8AB45E]
 
-{{GameData.player_name}}: [shake rate=10 level=5] What about my cat?! Is Felix in danger? What am I supposed to do?![/shake]
+{{GameData.player_name}}: [shake rate=10 level=5] What about my cat?! Is Felix in danger? What am I supposed to do?![/shake] [ID:461A36_646633]
 
-Ello: I don't think we should return to the forest. It's far too dangerous.
+Ello: I don't think we should return to the forest. It's far too dangerous. [ID:461A36_FA19BE]
 
-Ello: I can try to protect his dreams. If I succeed, he'll be safe for now
+Ello: I can try to protect his dreams. If I succeed, he'll be safe for now [ID:461A36_6645BF]
 
-{{GameData.player_name}}: I don't know... What's the worst that beast could do?
+{{GameData.player_name}}: I don't know... What's the worst that beast could do? [ID:461A36_5EC3CA]
 
-Ello: ...
+Ello: ... [ID:461A36_8AE9C4]
 
-Ello: It could corrupt what remains of this world, driving everyone into madness through endless nightmares
+Ello: It could corrupt what remains of this world, driving everyone into madness through endless nightmares [ID:461A36_BD7667]
 
-Ello: I need to rest. Nearly being devoured isn't exactly easy to recover from
+Ello: I need to rest. Nearly being devoured isn't exactly easy to recover from [ID:461A36_0069A6]
 
-Ello settles down to rest in the living room
+Ello settles down to rest in the living room [ID:461A36_268F9D]
 
 do SceneController.hide_character("Sprite5")
 do SceneController.fade_to_black()
 do SceneController.change_background("res://Visual Novel Romance/files/room1.png")
 
-You return to your bedroom, hoping Felix is still alive
+You return to your bedroom, hoping Felix is still alive [ID:461A36_011BAC]
 
-You received a message
+You received a message [ID:461A36_723C6C]
 
-- Reply
+- Reply [ID:461A36_E4DDB9]
 	=> reply
 
-- Ignore the message
+- Ignore the message [ID:461A36_7EAFBB]
 	=> no_reply
 
 ~ reply
 do SaveManager.set_checkpoint("reply")
 if GameData.morning_route == "breakfast" and GameData.last_person_texted == "gio"
-	Your phone lights up.
-	Gio: I found out more things about folklore
-	{{GameData.player_name}}: Cool, tell me more tomorrow
+	Your phone lights up. [ID:461A36_AA6EA1]
+	Gio: I found out more things about folklore [ID:461A36_7A8673]
+	{{GameData.player_name}}: Cool, tell me more tomorrow [ID:461A36_BBAE20]
 	
 	=> to_dream
 	
 if GameData.morning_route == "sleep" and GameData.last_person_texted == "mary"
-	Your phone lights up.
-	Mary: Sorry, I was working earlier.
-	{{GameData.player_name}}: Don't worry, Mary
-	{{GameData.player_name}}: I have news
+	Your phone lights up. [ID:461A36_E043DC]
+	Mary: Sorry, I was working earlier. [ID:461A36_D3E6C1]
+	{{GameData.player_name}}: Don't worry, Mary [ID:461A36_E6985C]
+	{{GameData.player_name}}: I have news [ID:461A36_40FA22]
 	
 	=> to_dream
 
-It's not any important message
+It's not any important message [ID:461A36_56CF69]
 
 => to_dream
 
 ~ no_reply
 do SaveManager.set_checkpoint("no_reply")
-You keep scrolling through your phone until you eventually drift off to sleep.
+You keep scrolling through your phone until you eventually drift off to sleep. [ID:461A36_3B8031]
 => to_dream
 
 ~ to_dream
@@ -457,40 +457,40 @@ do SceneController.fade_to_black()
 do SceneController.change_background("res://Visual Novel Romance/files/img10.png")
 do MusicManager.play_music("res://Visual Novel Romance/music/music7.mp3")
 
-You awaken in a place you've never seen before. It looks like... a casino.
+You awaken in a place you've never seen before. It looks like... a casino. [ID:461A36_CF5006]
 
 do SceneController.show_character("Sprite3")
 
 do MusicManager.play_music("res://Visual Novel Romance/music/music7.mp3")
 
-{{GameData.player_name}}: Where am I? How did I get here?
+{{GameData.player_name}}: Where am I? How did I get here? [ID:461A36_6A5168]
 
-Beast: Welcome... dear Dreamer.
-Beast: Come closer. Place your bet... Tell me, what do you wish to achieve?
+Beast: Welcome... dear Dreamer. [ID:461A36_7AEB9C]
+Beast: Come closer. Place your bet... Tell me, what do you wish to achieve? [ID:461A36_0C6B26]
 
-- Bet your HP
+- Bet your HP [ID:461A36_ADF2B6]
 	=> bet
 
-- Refuse to bet
+- Refuse to bet [ID:461A36_726092]
 	=> refuse
 	
 ~ refuse
 do SaveManager.set_checkpoint("refuse")
-{{GameData.player_name}}: Gambling really isn't my thing. I'm not lucky... and besides, what's the prize?
+{{GameData.player_name}}: Gambling really isn't my thing. I'm not lucky... and besides, what's the prize? [ID:461A36_7537EA]
 
-Beast: How about a cute little kitty... the one that ran away earlier?
+Beast: How about a cute little kitty... the one that ran away earlier? [ID:461A36_E2E215]
 
-{{GameData.player_name}}: ...And if I lose?
+{{GameData.player_name}}: ...And if I lose? [ID:461A36_CEA9D2]
 
-Beast: You'll find out what's waiting for you...
+Beast: You'll find out what's waiting for you... [ID:461A36_845AB8]
 
-{{GameData.player_name}}: I really don't feel like playing
+{{GameData.player_name}}: I really don't feel like playing [ID:461A36_C531D8]
 
-Beast: Then accept a small courtesy
+Beast: Then accept a small courtesy [ID:461A36_52EFA0]
 
 do GameData.change_health(-10)
 
-You took damage
+You took damage [ID:461A36_346F91]
 
 do SceneController.fade_to_black()
 
@@ -499,37 +499,37 @@ do SceneController.fade_to_black()
 ~ bet
 do SaveManager.set_checkpoint("bet")
 
-Beast: The rules are simple. Before us lies a deck of thirty-two cards. Each card bears the symbol of a chess piece. Every piece has its own value
+Beast: The rules are simple. Before us lies a deck of thirty-two cards. Each card bears the symbol of a chess piece. Every piece has its own value [ID:461A36_24EF74]
 
-Beast: Pawns are worth 10 points. Knights and Bishops are worth 30. Rooks are worth 50. Queens are worth 70
+Beast: Pawns are worth 10 points. Knights and Bishops are worth 30. Rooks are worth 50. Queens are worth 70 [ID:461A36_79377A]
 
-Beast: Kings do not deal damage. Instead, they restore up to 50 health
+Beast: Kings do not deal damage. Instead, they restore up to 50 health [ID:461A36_430933]
 
-Beast: We each begin with the same amount of health
+Beast: We each begin with the same amount of health [ID:461A36_307ADF]
 
-Beast: Three rounds. If your health reaches zero... your dreams become mine
+Beast: Three rounds. If your health reaches zero... your dreams become mine [ID:461A36_38B2D3]
 
-Beast: If mine reaches zero... I'll return your precious cat. Should we both survive, victory belongs to whoever has the most health remaining
+Beast: If mine reaches zero... I'll return your precious cat. Should we both survive, victory belongs to whoever has the most health remaining [ID:461A36_D03849]
 
-Beast: Shall we begin?
+Beast: Shall we begin? [ID:461A36_41088E]
 
 do GameData.start_card_game()
 ~ round
 
-Round {{GameData.card_round}}
+Round {{GameData.card_round}} [ID:461A36_678E53]
 
 do GameData.player_draw_card()
 
-You drew the {{GameData.get_card_name(GameData.player_card)}}.
+You drew the {{GameData.get_card_name(GameData.player_card)}}. [ID:461A36_00DDBC]
 
 do GameData.beast_draw_card()
 
-The Beast drew the {{GameData.get_card_name(GameData.beast_card)}}.
+The Beast drew the {{GameData.get_card_name(GameData.beast_card)}}. [ID:461A36_903A73]
 
 do GameData.resolve_round()
 
-Your HP: {{GameData.health}}
-Beast HP: {{GameData.beast_hp}}
+Your HP: {{GameData.health}} [ID:461A36_43B3AC]
+Beast HP: {{GameData.beast_hp}} [ID:461A36_0C5893]
 
 => check_round
 	
@@ -550,19 +550,19 @@ do SaveManager.set_checkpoint("dream_continues")
 do SceneController.show_character("Sprite3")
 do MusicManager.play_music("res://Visual Novel Romance/music/music3-v1.mp3")
 
-The Beast begins to smile
+The Beast begins to smile [ID:461A36_94FAB3]
 
-You watch as the Beast transforms, growing larger and more distorted than before
+You watch as the Beast transforms, growing larger and more distorted than before [ID:461A36_C3FFDF]
 
 do MusicManager.play_music("res://Visual Novel Romance/music/music8.mp3")
 
-[shake race=20 level=10] A cold sweat runs down your back as you realize there's no escape [/shake]
+[shake race=20 level=10] A cold sweat runs down your back as you realize there's no escape [/shake] [ID:461A36_56FB73]
 
-The surroundings begin to warp, and you start to feel the effects of the nightmare's corruption... You think of your family and friends, but no one can save you
+The surroundings begin to warp, and you start to feel the effects of the nightmare's corruption... You think of your family and friends, but no one can save you [ID:461A36_928161]
 
-A light appears... it's Ello
+A light appears... it's Ello [ID:461A36_4FE185]
 
-You feel weak and exhausted, and your eyes slowly close
+You feel weak and exhausted, and your eyes slowly close [ID:461A36_F27734]
 => dream_ends
 
 ~ dream_ends
@@ -572,217 +572,217 @@ do SceneController.hide_character("Sprite3")
 
 do SceneController.change_background("res://Visual Novel Romance/files/room1.png")
 
-You slowly wake up, feeling dizzy and exhausted
+You slowly wake up, feeling dizzy and exhausted [ID:461A36_73E81C]
 
-You open your eyes and see Ello staring at you
+You open your eyes and see Ello staring at you [ID:461A36_A31D46]
 
 do SceneController.show_character("Sprite5")
 
-Ello: Thank goodness you're awake... I thought you were never going to wake up
+Ello: Thank goodness you're awake... I thought you were never going to wake up [ID:461A36_7B9553]
 
 do GameData.change_health(100)
 
-Ello restores your HP
+Ello restores your HP [ID:461A36_874A18]
 
-You feel a little better
-{{GameData.player_name}}: Huh... What was that?
-{{GameData.player_name}}: It's been so long since I last dreamed, and then that monster shows up
+You feel a little better [ID:461A36_9CF9DA]
+{{GameData.player_name}}: Huh... What was that? [ID:461A36_DB75CE]
+{{GameData.player_name}}: It's been so long since I last dreamed, and then that monster shows up [ID:461A36_073DF4]
 
-Ello: It was intentional. They wanted to leave you with little lucidity so you'd be easier to manipulate
+Ello: It was intentional. They wanted to leave you with little lucidity so you'd be easier to manipulate [ID:461A36_E84BD5]
 
-{{GameData.player_name}}: By the Goddess... How can I get rid of this?
+{{GameData.player_name}}: By the Goddess... How can I get rid of this? [ID:461A36_F350BC]
 
-Ello: ...Well, I don't think it's wise to stop dreaming. The ideal is to find yourself within the dream, avoiding moments of vulnerability
+Ello: ...Well, I don't think it's wise to stop dreaming. The ideal is to find yourself within the dream, avoiding moments of vulnerability [ID:461A36_620E64]
 
-{{GameData.player_name}}: Find myself? Like one of those church sermons?
+{{GameData.player_name}}: Find myself? Like one of those church sermons? [ID:461A36_747BC7]
 
-Ello: Something like that, but it's not time for that yet...
+Ello: Something like that, but it's not time for that yet... [ID:461A36_0F0046]
 
-{{GameData.player_name}}: What about my Felix? Do you think he's okay?
+{{GameData.player_name}}: What about my Felix? Do you think he's okay? [ID:461A36_9C1BB6]
 
-Ello: From what I've been able to monitor, he's doing as well as can be expected
+Ello: From what I've been able to monitor, he's doing as well as can be expected [ID:461A36_A170AD]
 
-{{GameData.player_name}}: But how can you be so sure? This is all so bizarre
+{{GameData.player_name}}: But how can you be so sure? This is all so bizarre [ID:461A36_C5B539]
 
-Ello: It's a secret
+Ello: It's a secret [ID:461A36_30CD6B]
 
-{{GameData.player_name}}: I need to go study... But I'm so worn out I think I'll skip today
+{{GameData.player_name}}: I need to go study... But I'm so worn out I think I'll skip today [ID:461A36_976637]
 
-- Go to the university
+- Go to the university [ID:461A36_062B38]
   => go_university
 
-- Skip university
-  {{GameData.player_name}}: Finally, some rest
+- Skip university [ID:461A36_15A293]
+  {{GameData.player_name}}: Finally, some rest [ID:461A36_F3F16F]
   => not_go
 
 ~ go_university
 do SceneController.hide_character("Sprite5")
 do SaveManager.set_checkpoint("go_university")
-You prepare your breakfast and miss having your cat following you around the house
+You prepare your breakfast and miss having your cat following you around the house [ID:461A36_AE7775]
 
 do SceneController.play_video("res://Visual Novel Romance/files/Breakfast_high.ogv") 
 do SceneController.change_background("res://Visual Novel Romance/files/fundo-branco-png.png")
-You pick up a warm outfit covered in fur and put it on anyway
+You pick up a warm outfit covered in fur and put it on anyway [ID:461A36_8309C8]
 do SceneController.stop_video()
 
-On your way to university, you think about what you will have to do during the day
+On your way to university, you think about what you will have to do during the day [ID:461A36_349959]
 
-You arrive at the university and find Gio
+You arrive at the university and find Gio [ID:461A36_B244F1]
 do SceneController.change_background("res://Visual Novel Romance/files/img2.png")
 
 do GameData.print_route()
 
 if GameData.morning_route == "breakfast":
 	do SceneController.show_character("Sprite1")
-	Gio: Are you okay? You look a little...
+	Gio: Are you okay? You look a little... [ID:461A36_5B1427]
 
-	- Tell him what happened
+	- Tell him what happened [ID:461A36_584877]
 		=> tell
 
-	- Don't tell him
+	- Don't tell him [ID:461A36_FB5E89]
 		=> not_tell
 	
 elif GameData.morning_route == "sleep":
 	do SceneController.show_character("Sprite1")
-	Gio: Hey, {{GameData.player_name}}. How are you?
-	Gio: Do you remember my last study about local folklore? I found more information about the stories we used to hear when we were children
-	You begin to remember the tales about dreams, where an Oneiric being protects the dreams of children and the world itself, keeping balance between them
-	The legend says that when people stop dreaming, the Oneirics lose their strength, leaving humanity vulnerable to the attacks of their greatest nightmares
-	Gio: Well, according to the book I'm reading, these stories are ancient and connected to rituals and ancestral temples
-	Gio: This book suggests that, if those practices truly worked, people could reach a state where they were able to control their dreams. Dreams could even become a way to understand the present or glimpse the future
-	Gio: I'm going to use this book for my research project.
+	Gio: Hey, {{GameData.player_name}}. How are you? [ID:461A36_B03394]
+	Gio: Do you remember my last study about local folklore? I found more information about the stories we used to hear when we were children [ID:461A36_2D3E40]
+	You begin to remember the tales about dreams, where an Oneiric being protects the dreams of children and the world itself, keeping balance between them [ID:461A36_D729F7]
+	The legend says that when people stop dreaming, the Oneirics lose their strength, leaving humanity vulnerable to the attacks of their greatest nightmares [ID:461A36_15EE3F]
+	Gio: Well, according to the book I'm reading, these stories are ancient and connected to rituals and ancestral temples [ID:461A36_2DA8B9]
+	Gio: This book suggests that, if those practices truly worked, people could reach a state where they were able to control their dreams. Dreams could even become a way to understand the present or glimpse the future [ID:461A36_50A223]
+	Gio: I'm going to use this book for my research project. [ID:461A36_D7699D]
 	
-	- talk about your cat
+	- talk about your cat [ID:461A36_76AD4D]
 		=> not_tell
 	
-	- continue talking about the dream myth
+	- continue talking about the dream myth [ID:461A36_F47CC2]
 		=> myth 
 
 ~ myth 
 do SceneController.show_character("Sprite1")
-{{GameData.player_name}}: I'm more or less...
-{{GameData.player_name}}: Wow, that's crazy, what are you thinking about your research?
+{{GameData.player_name}}: I'm more or less... [ID:461A36_609140]
+{{GameData.player_name}}: Wow, that's crazy, what are you thinking about your research? [ID:461A36_DAE2C8]
 
-Gio: I actually love this subject, when I was younger it wasn't as exciting, but now I can compare different sources
+Gio: I actually love this subject, when I was younger it wasn't as exciting, but now I can compare different sources [ID:461A36_86E892]
 
-Gio: There are other mythologies that I intend to study in depth, but for now I'll focus on this one
+Gio: There are other mythologies that I intend to study in depth, but for now I'll focus on this one [ID:461A36_2B80EF]
 
-Gio: A lot of things get summarized when we go to a service, and even though they give you a foundation, I don't think it's enough for me, I want to know more
+Gio: A lot of things get summarized when we go to a service, and even though they give you a foundation, I don't think it's enough for me, I want to know more [ID:461A36_9C32DE]
 
-Gio: Have you heard any news?
+Gio: Have you heard any news? [ID:461A36_5D9364]
 
 => not_tell
 
 ~ tell 
 do SceneController.show_character("Sprite1")
 do SaveManager.set_checkpoint("tell")
-{{GameData.player_name}}: You won't believe this... Felix ran away, and when I went looking for him, I ended up finding a dream guardian
+{{GameData.player_name}}: You won't believe this... Felix ran away, and when I went looking for him, I ended up finding a dream guardian [ID:461A36_A49009]
 
-{{GameData.player_name}}: This is crazy
+{{GameData.player_name}}: This is crazy [ID:461A36_A25C08]
 
-Gio: What? Wait, that was a lot to take in all at once
+Gio: What? Wait, that was a lot to take in all at once [ID:461A36_BF76ED]
 
-Gio: I didn't expect the prophecy to have already begun... It was only speculation
+Gio: I didn't expect the prophecy to have already begun... It was only speculation [ID:461A36_14C8EA]
 
-Gio: This means we haven't been alone for some time
+Gio: This means we haven't been alone for some time [ID:461A36_05C1D4]
 
-Gio becomes thoughtful, his expression growing somewhat serious
+Gio becomes thoughtful, his expression growing somewhat serious [ID:461A36_886A44]
 
-- Ask questions
+- Ask questions [ID:461A36_5F223E]
   => ask
 
 ~ ask
 do SceneController.show_character("Sprite1")
-{{GameData.player_name}}: What does all of this mean?
+{{GameData.player_name}}: What does all of this mean? [ID:461A36_E36402]
 
-Gio: So... this means that people in general no longer dream, but despite that, they are still susceptible to the influence of nightmares
+Gio: So... this means that people in general no longer dream, but despite that, they are still susceptible to the influence of nightmares [ID:461A36_1C348C]
 
-Gio: Because of this, the guardians have lost a large part of their strength, which came from the vitality of human dreams
+Gio: Because of this, the guardians have lost a large part of their strength, which came from the vitality of human dreams [ID:461A36_3D1A18]
 
-Gio: All of this is quite surprising... It's a process of metamorphosis
+Gio: All of this is quite surprising... It's a process of metamorphosis [ID:461A36_B7B1EF]
 
-{{GameData.player_name}}: Huh??
+{{GameData.player_name}}: Huh?? [ID:461A36_496ABA]
 
-Gio: How can I put this... It's a change expected in a possible future. It's not predetermined, but it does have certain tendencies
+Gio: How can I put this... It's a change expected in a possible future. It's not predetermined, but it does have certain tendencies [ID:461A36_0EF3B9]
 
-Gio: The prophecy indicates that the future has two main paths. In one, it is possible to restore people's dreams through the intervention of the guardians, while the other happens if the guardians' intervention fails
+Gio: The prophecy indicates that the future has two main paths. In one, it is possible to restore people's dreams through the intervention of the guardians, while the other happens if the guardians' intervention fails [ID:461A36_EFD928]
 
-Gio: The guardians' intervention must be indirect and cautious, because they need to guide people toward understanding who they are, discovering and rediscovering their forgotten dreams
+Gio: The guardians' intervention must be indirect and cautious, because they need to guide people toward understanding who they are, discovering and rediscovering their forgotten dreams [ID:461A36_B76854]
 
-Gio: From there, they will begin to dream more often and in a healthier way, because they will understand that what lies hidden within them can only be safely controlled by understanding who they are, meaning the nightmares' attacks will no longer have any effect
+Gio: From there, they will begin to dream more often and in a healthier way, because they will understand that what lies hidden within them can only be safely controlled by understanding who they are, meaning the nightmares' attacks will no longer have any effect [ID:461A36_BEA30B]
 
-{{GameData.player_name}}: ...And what if they fail?
+{{GameData.player_name}}: ...And what if they fail? [ID:461A36_533B2F]
 
-Gio: It is very likely that people will begin to experience nightmares so real and intense that they will start confusing reality with their nightmares
+Gio: It is very likely that people will begin to experience nightmares so real and intense that they will start confusing reality with their nightmares [ID:461A36_13D45F]
 
-Gio: They will become aggressive and unrecognizable, because they will see nothing but distortions
+Gio: They will become aggressive and unrecognizable, because they will see nothing but distortions [ID:461A36_9F8CCF]
 
-Gio: We can continue this later, we should get to class
+Gio: We can continue this later, we should get to class [ID:461A36_058EAB]
 
-You go to your classroom and remain thoughtful about the new information you have learned. You pay attention during the university classes from time to time
+You go to your classroom and remain thoughtful about the new information you have learned. You pay attention during the university classes from time to time [ID:461A36_8D8A90]
 
-You wonder if you will meet Gio after class
+You wonder if you will meet Gio after class [ID:461A36_1DBE86]
 
-After hours of studying, you find yourself ready to leave
+After hours of studying, you find yourself ready to leave [ID:461A36_43BB11]
 
 => go_work2
 
 ~ not_tell
 do SaveManager.set_checkpoint("not_tell")
 do SceneController.show_character("Sprite1")
-{{GameData.player_name}}: I just had a terrible night... My cat ran away, and I still haven't found him
+{{GameData.player_name}}: I just had a terrible night... My cat ran away, and I still haven't found him [ID:461A36_CA9447]
 
-Gio: Oh... That's sad. You'll find him soon, I'm sure of it
+Gio: Oh... That's sad. You'll find him soon, I'm sure of it [ID:461A36_73BEEA]
 
-Gio: So, how did this happen?
+Gio: So, how did this happen? [ID:461A36_3F22C0]
 
-{{GameData.player_name}}: To tell you the truth, I don't even know... I was opening the door to get inside my house when my key fell to the floor, and during that time Felix, who was near the door, ran outside
+{{GameData.player_name}}: To tell you the truth, I don't even know... I was opening the door to get inside my house when my key fell to the floor, and during that time Felix, who was near the door, ran outside [ID:461A36_AB6C53]
 
-Gio: I hope he's okay
+Gio: I hope he's okay [ID:461A36_D012EB]
 
-{{GameData.player_name}}: Me too
+{{GameData.player_name}}: Me too [ID:461A36_B1D203]
 
-{{GameData.player_name}}: Let's change the subject for a bit... Give my mind a chance to relax
+{{GameData.player_name}}: Let's change the subject for a bit... Give my mind a chance to relax [ID:461A36_2CE406]
 
-{{GameData.player_name}}: You said you had discovered something new. What was it?
+{{GameData.player_name}}: You said you had discovered something new. What was it? [ID:461A36_6CA399]
 
-Gio: I can tell you're interested in my research
+Gio: I can tell you're interested in my research [ID:461A36_C41F23]
 
-Gio: Well... There are several curiosities and mysteries surrounding these mystical beings
+Gio: Well... There are several curiosities and mysteries surrounding these mystical beings [ID:461A36_C91752]
 
-Gio: Nightmares are frequently associated with large animals, creating a sense of helplessness and terror, neutralizing their targets without much effort
+Gio: Nightmares are frequently associated with large animals, creating a sense of helplessness and terror, neutralizing their targets without much effort [ID:461A36_A654CD]
 
-Gio: Meanwhile, dream beings are often represented as small, bright, flying creatures
+Gio: Meanwhile, dream beings are often represented as small, bright, flying creatures [ID:461A36_8C952C]
 
-Gio: But it's funny how humans are sometimes represented as both, to suggest that deep down, we are the evil we fear and the good we desire
+Gio: But it's funny how humans are sometimes represented as both, to suggest that deep down, we are the evil we fear and the good we desire [ID:461A36_224677]
 
-Gio: Stories always try to convey the idea that you should prioritize who you are over the person others expect you to be
+Gio: Stories always try to convey the idea that you should prioritize who you are over the person others expect you to be [ID:461A36_31B41C]
 
-Gio: The complete opposite of nightmares, which try at all costs to make you lose yourself
+Gio: The complete opposite of nightmares, which try at all costs to make you lose yourself [ID:461A36_C148AA]
 
-Gio: Dreams reveal a great deal about who you are, including what you think and feel
+Gio: Dreams reveal a great deal about who you are, including what you think and feel [ID:461A36_8501DF]
 
-{{GameData.player_name}}: Hmmm... So what would it mean to dream about guardians and beasts?
+{{GameData.player_name}}: Hmmm... So what would it mean to dream about guardians and beasts? [ID:461A36_77219D]
 
-Gio: I'm not an expert in the field... but I would assume it indicates some kind of conflict. I'm not certain, though. It depends a lot on what the dream was like
+Gio: I'm not an expert in the field... but I would assume it indicates some kind of conflict. I'm not certain, though. It depends a lot on what the dream was like [ID:461A36_A7745A]
 
-{{GameData.player_name}}: Ah... I see. That's really interesting, but I think it's time for class to start
+{{GameData.player_name}}: Ah... I see. That's really interesting, but I think it's time for class to start [ID:461A36_0A26E3]
 
-Gio: True. See you later
+Gio: True. See you later [ID:461A36_073207]
 
-You say goodbye and go to your respective classrooms. You wonder if you should have told him, but you're afraid of what it might trigger
+You say goodbye and go to your respective classrooms. You wonder if you should have told him, but you're afraid of what it might trigger [ID:461A36_DC6EA3]
 
-You try to remember the church's commandments, hoping to find something that might help you, but you can't remember much
+You try to remember the church's commandments, hoping to find something that might help you, but you can't remember much [ID:461A36_879393]
 
-You wonder if you should talk to Ello to figure out how to deal with this
+You wonder if you should talk to Ello to figure out how to deal with this [ID:461A36_DBC674]
 
-You struggle to focus on the class material because you don't want to fail the subject, so you take notes and draw to help with your thought process
+You struggle to focus on the class material because you don't want to fail the subject, so you take notes and draw to help with your thought process [ID:461A36_331778]
 
-After class, you head straight to work. On the way, you run into Mary
+After class, you head straight to work. On the way, you run into Mary [ID:461A36_5DBA30]
 
-Mary asks how you are doing, and you briefly explain the situation. She sympathizes with you and says she'll give you a cat collar with a tracker to save you the trouble
+Mary asks how you are doing, and you briefly explain the situation. She sympathizes with you and says she'll give you a cat collar with a tracker to save you the trouble [ID:461A36_16EDEB]
 
-Mary tells you about the latest news from her job and how well she's been doing at university this semester, although she still doesn't have much time to have fun
+Mary tells you about the latest news from her job and how well she's been doing at university this semester, although she still doesn't have much time to have fun [ID:461A36_AA15EB]
 
 => go_work2
 
@@ -792,74 +792,74 @@ do SaveManager.set_checkpoint("go_work2")
 do MusicManager.play_music("res://Visual Novel Romance/music/music9.mp3")
 do SceneController.change_background("res://Visual Novel Romance/files/img4.png")
 
-You arrive at work and greet your coworkers
+You arrive at work and greet your coworkers [ID:461A36_2FC36E]
 
-Luiza: You won't believe the news, {{GameData.player_name}}. They're renovating our department, and they're thinking about throwing a little farewell party for Henry
+Luiza: You won't believe the news, {{GameData.player_name}}. They're renovating our department, and they're thinking about throwing a little farewell party for Henry [ID:461A36_42077E]
 
-Henry is one of the company's longest-serving employees
+Henry is one of the company's longest-serving employees [ID:461A36_3E1E95]
 
-You continue talking with Luiza, and the conversation becomes a nice enough distraction to make you laugh a little
+You continue talking with Luiza, and the conversation becomes a nice enough distraction to make you laugh a little [ID:461A36_D02393]
 
-During your break, you eat your lasagna packed lunch and enjoy the moment. You talk with some of your other coworkers, and time passes quickly
+During your break, you eat your lasagna packed lunch and enjoy the moment. You talk with some of your other coworkers, and time passes quickly [ID:461A36_0C3CBB]
 
-You return to work and finish your reports for the day with a lighter heart
+You return to work and finish your reports for the day with a lighter heart [ID:461A36_F3784F]
 
-At the end of your shift, you return home and take a deep breath
+At the end of your shift, you return home and take a deep breath [ID:461A36_3DC3E0]
 
 do SceneController.change_background("res://Visual Novel Romance/files/room1.png")
 
 do SceneController.show_character("Sprite5")
 
-Ello is there
+Ello is there [ID:461A36_97EF17]
 
-You aren't particularly excited about interacting with Ello, but you need to
+You aren't particularly excited about interacting with Ello, but you need to [ID:461A36_47576F]
 
-{{GameData.player_name}}: Any news?
+{{GameData.player_name}}: Any news? [ID:461A36_C0CBFE]
 
-Ello: I think so. I'm making progress regarding people's dreams. It's not a milestone, but it's a beginning
+Ello: I think so. I'm making progress regarding people's dreams. It's not a milestone, but it's a beginning [ID:461A36_A2F7B1]
 
-Ello: I can't find your cat, but he seems to be making friends in the forest
+Ello: I can't find your cat, but he seems to be making friends in the forest [ID:461A36_8F903B]
 
-Ello: In fact, I found some individuals who were already in a serious stage of disturbance. Helping animals in that condition is no longer so simple
+Ello: In fact, I found some individuals who were already in a serious stage of disturbance. Helping animals in that condition is no longer so simple [ID:461A36_E74FF1]
 
-{{GameData.player_name}}: But there's still hope for them, right?
+{{GameData.player_name}}: But there's still hope for them, right? [ID:461A36_F79CD6]
 
-Ello: In short, yes, but it's a slow process, and there's no guarantee the individual will return to a healthy state
+Ello: In short, yes, but it's a slow process, and there's no guarantee the individual will return to a healthy state [ID:461A36_A1AB5B]
 
-Ello: If their condition worsens, they may develop lasting effects
+Ello: If their condition worsens, they may develop lasting effects [ID:461A36_DBAAB7]
 
-{{GameData.player_name}}: My goodness... That's concerning
+{{GameData.player_name}}: My goodness... That's concerning [ID:461A36_AF3486]
 
-- Ask about the dream
+- Ask about the dream [ID:461A36_411636]
   => ask_more
 
-- Make dinner and study
+- Make dinner and study [ID:461A36_3B727E]
   => dinner
 
 ~ ask_more
 do SaveManager.set_checkpoint("ask_more")
-{{GameData.player_name}}: What was that monster? Where did it come from?
+{{GameData.player_name}}: What was that monster? Where did it come from? [ID:461A36_522527]
 
-Ello: It was Cerberus, a wolf focused on draining the energy of dreamers and leaving them exhausted. That makes it stronger
+Ello: It was Cerberus, a wolf focused on draining the energy of dreamers and leaving them exhausted. That makes it stronger [ID:461A36_055C44]
 
-{{GameData.player_name}}: And why did it choose me as its target?
+{{GameData.player_name}}: And why did it choose me as its target? [ID:461A36_41836E]
 
-Ello: Well... To test you and me
+Ello: Well... To test you and me [ID:461A36_D8F5E5]
 
-Ello: Someone who doesn't dream is the beginning of what they need to accomplish. Since you know I exist, they focus on you so I spend more time protecting you instead of other people, allowing them to eventually take control of your mind if I don't protect you well enough
+Ello: Someone who doesn't dream is the beginning of what they need to accomplish. Since you know I exist, they focus on you so I spend more time protecting you instead of other people, allowing them to eventually take control of your mind if I don't protect you well enough [ID:461A36_72516E]
 
 do SceneController.hide_character("Sprite5")
 
 ~ dinner
-You begin making dinner with whatever you have in the refrigerator so you don't have to think too much about everything... It's not particularly effective, but it seems like the best option for you
+You begin making dinner with whatever you have in the refrigerator so you don't have to think too much about everything... It's not particularly effective, but it seems like the best option for you [ID:461A36_42AC95]
 
-After finishing dinner and preparing your lunch for the next day, you plan to study
+After finishing dinner and preparing your lunch for the next day, you plan to study [ID:461A36_D0883B]
 
-It won't be long before a test for that unbearable subject
+It won't be long before a test for that unbearable subject [ID:461A36_FA2CEC]
 
-You sit at your desk in the bedroom and begin researching and taking practice tests... You get tired quickly
+You sit at your desk in the bedroom and begin researching and taking practice tests... You get tired quickly [ID:461A36_528ADF]
 
-But you study a little longer and eventually fall asleep
+But you study a little longer and eventually fall asleep [ID:461A36_BAF94D]
 
 => dreams
 
@@ -869,60 +869,60 @@ do MusicManager.play_music("res://Visual Novel Romance/music/music1.ogg")
 do SceneController.hide_character("Sprite5")
 do SceneController.change_background("res://Visual Novel Romance/files/img13.png")
 
-...You are talking to your sister in a childhood memory
+...You are talking to your sister in a childhood memory [ID:461A36_E9343D]
 
 do SceneController.show_character("Sprite6")
-Sister: Little one, have you figured out what your biggest dream is?
+Sister: Little one, have you figured out what your biggest dream is? [ID:461A36_9995D7]
 
-My biggest dream?
+My biggest dream? [ID:461A36_60B5B5]
 => what_dreams
 
-I think I have, Sister.
+I think I have, Sister. [ID:461A36_781831]
 => my_dreams
 
 ~ what_dreams
 do SaveManager.set_checkpoint("what_dreams")
-{{GameData.player_name}}: I don't really remember what my childhood dreams were...
+{{GameData.player_name}}: I don't really remember what my childhood dreams were... [ID:461A36_2071FB]
 
-Sister: Don't worry, little one. One day, you'll figure it out.
+Sister: Don't worry, little one. One day, you'll figure it out. [ID:461A36_5355DA]
 
-Sister: Nothing else comes to mind?
+Sister: Nothing else comes to mind? [ID:461A36_880364]
 
-{{GameData.player_name}}: I don't know... I don't think I really believe in that stuff.
+{{GameData.player_name}}: I don't know... I don't think I really believe in that stuff. [ID:461A36_112C1E]
 
-Sister: ...One day, you'll understand how important dreams really are.
+Sister: ...One day, you'll understand how important dreams really are. [ID:461A36_867776]
 => doubt
 
 ~ my_dreams
 do SaveManager.set_checkpoint("my_dreams")
 
-{{GameData.player_name}}: I want to create a world where animals and people can live vibrant, exciting lives... So, maybe an artist?
+{{GameData.player_name}}: I want to create a world where animals and people can live vibrant, exciting lives... So, maybe an artist? [ID:461A36_45AD9C]
 
-Sister: That's incredible. Never give up on your dream, no matter what happens.
+Sister: That's incredible. Never give up on your dream, no matter what happens. [ID:461A36_BC00C2]
 => doubt
 
 ~ doubt
 do SaveManager.set_checkpoint("doubt")
 
-{{GameData.player_name}}: Sister, how do I know if my dream is a good one?
+{{GameData.player_name}}: Sister, how do I know if my dream is a good one? [ID:461A36_FC7D80]
 
-Sister: When it brings you peace and fulfillment, you'll know you're on the right path.
+Sister: When it brings you peace and fulfillment, you'll know you're on the right path. [ID:461A36_D5F3FD]
 
-{{GameData.player_name}}: What if I want to be so many things? Can I become anything I want?
+{{GameData.player_name}}: What if I want to be so many things? Can I become anything I want? [ID:461A36_E5695A]
 
-Sister: You might have a passion for many things, but try to focus on one at a time—otherwise, you might end up lost.
+Sister: You might have a passion for many things, but try to focus on one at a time—otherwise, you might end up lost. [ID:461A36_417875]
 
-Sister: Life is about making choices on what truly matters. Sometimes we have to hold onto certain things and let others go.
+Sister: Life is about making choices on what truly matters. Sometimes we have to hold onto certain things and let others go. [ID:461A36_52F864]
 
-{{GameData.player_name}}: So, Sister... what dream did you choose?
+{{GameData.player_name}}: So, Sister... what dream did you choose? [ID:461A36_7685F3]
 
-Sister: To build a happy family. Growing up wasn't easy for us, so nothing mattered more to me than creating a place we could truly call home.
+Sister: To build a happy family. Growing up wasn't easy for us, so nothing mattered more to me than creating a place we could truly call home. [ID:461A36_2CFF94]
 
-Sister: And now that dream is coming true—I have all of you, my family, right here with me.
+Sister: And now that dream is coming true—I have all of you, my family, right here with me. [ID:461A36_C1B1AC]
 
-{{GameData.player_name}}: And what do you do once your dream comes true?
+{{GameData.player_name}}: And what do you do once your dream comes true? [ID:461A36_6D78D6]
 
-Sister: Now? Now I get to help the rest of my family achieve theirs.
+Sister: Now? Now I get to help the rest of my family achieve theirs. [ID:461A36_130BC1]
 
 => continuation
 
@@ -934,186 +934,186 @@ do MusicManager.play_music_for("res://Visual Novel Romance/music/alarm-clock.mp3
 do SceneController.change_background("res://Visual Novel Romance/files/room1.png")
 
 
-{{GameData.player_name}}: Hmm... What a strange dream... It wasn't horrifying
+{{GameData.player_name}}: Hmm... What a strange dream... It wasn't horrifying [ID:461A36_EE90A0]
 
-{{GameData.player_name}}: I wonder where Ello is
+{{GameData.player_name}}: I wonder where Ello is [ID:461A36_AF957F]
 
-{{GameData.player_name}}: It's awfully quiet here
+{{GameData.player_name}}: It's awfully quiet here [ID:461A36_18BC9F]
 
-You call out for Ello, but receive no answer
+You call out for Ello, but receive no answer [ID:461A36_FB62E0]
 
-But then Felix appears through the little passageway in the door and meows
+But then Felix appears through the little passageway in the door and meows [ID:461A36_F6B69B]
 
-{{GameData.player_name}}: Felix! How did you get here?
+{{GameData.player_name}}: Felix! How did you get here? [ID:461A36_2049B0]
 
-You quickly get up and go to hug your cat
+You quickly get up and go to hug your cat [ID:461A36_3D36AB]
 
 do MusicManager.play_music("res://Visual Novel Romance/music/music3-v1.mp3")
 
-But when you touch him, he evaporates
+But when you touch him, he evaporates [ID:461A36_574B0F]
 
-You freeze in shock, standing still as you look around in silence
+You freeze in shock, standing still as you look around in silence [ID:461A36_33CB0A]
 
-You get up to open the door and search for Ello, but the door evaporates too
+You get up to open the door and search for Ello, but the door evaporates too [ID:461A36_0A6494]
 
-Nothing is real
+Nothing is real [ID:461A36_74D3C7]
 
-Then the phone in your pocket rings
+Then the phone in your pocket rings [ID:461A36_552C33]
 
-You answer suspiciously
+You answer suspiciously [ID:461A36_A5900F]
 do MusicManager.play_music("res://Visual Novel Romance/music/music3-v1.mp3")
-???: Hello?
+???: Hello? [ID:461A36_27585C]
 
-{{GameData.player_name}}: Who is this?
+{{GameData.player_name}}: Who is this? [ID:461A36_A80EF6]
 
-???: You can call me Chimera
+???: You can call me Chimera [ID:461A36_6814AA]
 
-{{GameData.player_name}}: What do you want? What's happening?
+{{GameData.player_name}}: What do you want? What's happening? [ID:461A36_595042]
 
-Chimera: Nothing much... You really looked happy to see Felix. What a shame
+Chimera: Nothing much... You really looked happy to see Felix. What a shame [ID:461A36_146F40]
 
-Chimera: I wonder where he could be? I don't have good news...
+Chimera: I wonder where he could be? I don't have good news... [ID:461A36_81C219]
 
-You hear someone calling out. It's Ello's voice, but you can't see him anywhere
+You hear someone calling out. It's Ello's voice, but you can't see him anywhere [ID:461A36_95DBF4]
 
-Ello: Wake up! Don't believe anything. This is a nightmare, it's not real
+Ello: Wake up! Don't believe anything. This is a nightmare, it's not real [ID:461A36_8210D9]
 
-Ello: I can't wake you up, but this is your dream, so change it however you want
+Ello: I can't wake you up, but this is your dream, so change it however you want [ID:461A36_0DD590]
 
-You become thoughtful as Chimera continues making small talk on the phone, telling you that you are going to find the worst
+You become thoughtful as Chimera continues making small talk on the phone, telling you that you are going to find the worst [ID:461A36_7E7EFB]
 
-Ello: Chimera can't hurt you. I'm protecting you
+Ello: Chimera can't hurt you. I'm protecting you [ID:461A36_902FD3]
 
-You smash the phone and head into the hallway
+You smash the phone and head into the hallway [ID:461A36_B63A21]
 
 do SceneController.change_background("res://Visual Novel Romance/files/img12.png")
 
-You find an endless number of doors
+You find an endless number of doors [ID:461A36_85A560]
 
-You can still hear Chimera
+You can still hear Chimera [ID:461A36_746C61]
 
-Chimera: None of them is the exit
+Chimera: None of them is the exit [ID:461A36_4EEA8B]
 
-You enter the door on the left. You can't see anything because it's dark, so you close the door and find yourself in the same hallway again
+You enter the door on the left. You can't see anything because it's dark, so you close the door and find yourself in the same hallway again [ID:461A36_6800E9]
 
 do SceneController.change_background("res://Visual Novel Romance/files/img11.png")
 
-You enter through the door on the right, and it is dark as well. You close the door and find your family, all of them with red eyes. Some have hateful expressions, while others look sad
+You enter through the door on the right, and it is dark as well. You close the door and find your family, all of them with red eyes. Some have hateful expressions, while others look sad [ID:461A36_911BD0]
 
-Voices: Where were you? We were waiting for you, and you never came
+Voices: Where were you? We were waiting for you, and you never came [ID:461A36_911ED2]
 
-Voices: Get us out of here... Are you going to abandon us? Leave us here to suffer?
+Voices: Get us out of here... Are you going to abandon us? Leave us here to suffer? [ID:461A36_AAE657]
 
-You don't approach them, and you become increasingly desperate
+You don't approach them, and you become increasingly desperate [ID:461A36_1104E8]
 
-You begin to think about what all of this means... Then you return to the previous hallway and close the door
+You begin to think about what all of this means... Then you return to the previous hallway and close the door [ID:461A36_4A6790]
 
 do SceneController.change_background("res://Visual Novel Romance/files/img12.png")
 
-{{GameData.player_name}}: The doors are useless. They're just a distraction
+{{GameData.player_name}}: The doors are useless. They're just a distraction [ID:461A36_7CC764]
 
-You continue onward, sometimes running and sometimes walking, toward the end of the hallway
+You continue onward, sometimes running and sometimes walking, toward the end of the hallway [ID:461A36_616168]
 
-But you still can't find an exit
+But you still can't find an exit [ID:461A36_7DC11D]
 
-So you close your eyes and take a deep breath. You see many colors in the darkness
+So you close your eyes and take a deep breath. You see many colors in the darkness [ID:461A36_D65757]
 
-Nothing special happens, so you think of an exit door... An exit door
+Nothing special happens, so you think of an exit door... An exit door [ID:461A36_B135D4]
 
-You see it and move toward it...
+You see it and move toward it... [ID:461A36_FBE98E]
 
-You open it, and the darkness is dispelled by light...
+You open it, and the darkness is dispelled by light... [ID:461A36_550B06]
 
 do SceneController.fade_to_black()
 do SceneController.change_background("res://Visual Novel Romance/files/fundo-branco-png.png")
 
-Thank you for playing
+Thank you for playing [ID:461A36_2B3BAB]
 
-Demo end
+Demo end [ID:461A36_0FB803]
 
-The story continues in the full game
+The story continues in the full game [ID:461A36_32AE92]
 
-click the logout button
+click the logout button [ID:461A36_E4AEC3]
 
 => END
 
 ~ not_go
 do SceneController.hide_character("Sprite5")
 do SaveManager.set_checkpoint("not_go")
-Well, now it's time...
+Well, now it's time... [ID:461A36_D02DA4]
 
-- Look for Felix
+- Look for Felix [ID:461A36_9AE438]
   => look_for
 
 ~ look_for
 do SaveManager.set_checkpoint("look_for")
-You get ready and even grab the cat carrier to prevent him from running away again
+You get ready and even grab the cat carrier to prevent him from running away again [ID:461A36_8174B8]
 
-You leave the house, cross the street, and reach the edge of the forest
+You leave the house, cross the street, and reach the edge of the forest [ID:461A36_CF6F55]
 
 do SceneController.change_background("res://Visual Novel Romance/files/img5.png")
 
 do MusicManager.play_music("res://Visual Novel Romance/music/music6.mp3")
 
-You begin exploring again and hear birds singing
+You begin exploring again and hear birds singing [ID:461A36_6958B2]
 
-You mark the trails you plan to follow on your phone's map
+You mark the trails you plan to follow on your phone's map [ID:461A36_404503]
 
-so you can search for the cat...
+so you can search for the cat... [ID:461A36_E7C143]
 
-You begin your journey and see many wild animals in the forest. In general, they don't pose any threat to you
+You begin your journey and see many wild animals in the forest. In general, they don't pose any threat to you [ID:461A36_AE3A9E]
 
-At one point, you decide to sit down and rest. You pull out a small bottle of water to hydrate yourself and a snack
+At one point, you decide to sit down and rest. You pull out a small bottle of water to hydrate yourself and a snack [ID:461A36_411BA9]
 
-When you are almost finished with your snack, you hear a noise
+When you are almost finished with your snack, you hear a noise [ID:461A36_DF10C1]
 
 do SceneController.show_character("Sprite4")
 
-It's a deer, nothing unusual... but there is something strange about it
+It's a deer, nothing unusual... but there is something strange about it [ID:461A36_1F12EB]
 
-You continue looking at it, trying to identify what is wrong, and then you notice
+You continue looking at it, trying to identify what is wrong, and then you notice [ID:461A36_37408E]
 
-it has red eyes
+it has red eyes [ID:461A36_0FB71D]
 
-It stares at you, makes a noise, and charges toward you
+It stares at you, makes a noise, and charges toward you [ID:461A36_6AE928]
 
-Luckily, it misses, and you manage to move away a little... Think of a way to escape
+Luckily, it misses, and you manage to move away a little... Think of a way to escape [ID:461A36_0CD246]
 
-- Quickly climb a tree
+- Quickly climb a tree [ID:461A36_83982D]
   => to_climb
 
-- Run
+- Run [ID:461A36_83481A]
   => run
 
 ~ run
 do SaveManager.set_checkpoint("run")
 do SceneController.hide_character("Sprite4")
-You retrace part of the path you already took, trying to lose the deer. After a few minutes, you manage to escape it
+You retrace part of the path you already took, trying to lose the deer. After a few minutes, you manage to escape it [ID:461A36_6C2CB1]
 
-You wonder whether you should search along another route or if it's already time to return home and get ready for work
+You wonder whether you should search along another route or if it's already time to return home and get ready for work [ID:461A36_8B4A73]
 
-You return home, leave your belongings there, and prepare to go to work
+You return home, leave your belongings there, and prepare to go to work [ID:461A36_C6AFAF]
 
 => go_work2
 
 ~ to_climb
 do SaveManager.set_checkpoint("to_climb")
-You climb a not-too-tall tree while narrowly escaping the deer. It tries to reach you but can't
+You climb a not-too-tall tree while narrowly escaping the deer. It tries to reach you but can't [ID:461A36_92EEF4]
 
-Then it simply stares at you, and you begin to wonder how long this will last...
+Then it simply stares at you, and you begin to wonder how long this will last... [ID:461A36_F5882A]
 
-The longer you stay, the more time you lose, so you begin wondering how Ello came to this forest in the first place, and why a forest instead of somewhere he is worshiped, like a church
+The longer you stay, the more time you lose, so you begin wondering how Ello came to this forest in the first place, and why a forest instead of somewhere he is worshiped, like a church [ID:461A36_924EE3]
 
-After a few minutes, you try throwing the rest of your snack at the deer to see if it will at least become distracted, and it works
+After a few minutes, you try throwing the rest of your snack at the deer to see if it will at least become distracted, and it works [ID:461A36_6C7DCC]
 
-The deer approaches to eat the snack, and at that moment you try climbing down behind the tree. When your feet touch the ground, you run to grab the cat carrier that was lying on the ground and run
+The deer approaches to eat the snack, and at that moment you try climbing down behind the tree. When your feet touch the ground, you run to grab the cat carrier that was lying on the ground and run [ID:461A36_EED5C4]
 
 do SceneController.hide_character("Sprite4")
-You retrace your path
+You retrace your path [ID:461A36_CBEF16]
 
-And decide to return home immediately, before another animal appears and attacks you
+And decide to return home immediately, before another animal appears and attacks you [ID:461A36_FF205B]
 
-You return home, leave your things there, and prepare to go to work
+You return home, leave your things there, and prepare to go to work [ID:461A36_EFF432]
 
 => go_work2
 

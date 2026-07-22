@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cytsa70kvvclx"
+
+[deps]
+
+files=["res://Visual Novel Romance/scene1-pt-BR.en.translation"]
+
+source_file="res://Visual Novel Romance/scene1-pt-BR.csv"
+dest_files=["res://Visual Novel Romance/scene1-pt-BR.en.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

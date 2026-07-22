@@ -2,6 +2,7 @@ extends Control
 
 @onready var slider = $PreferencesPanel/HSlider
 @onready var value_label = $PreferencesPanel/Volume
+@onready var language_option_button = $PreferencesPanel/OptionButton
 
 func _ready():
 	$PreferencesPanel/HSlider.value = MusicManager.music_volume_db
@@ -43,3 +44,23 @@ func _on_quit_pressed():
 	
 func _on_start_pressed():
 	get_tree().change_scene_to_file("res://Visual Novel Romance/tscn/intro.tscn")
+
+
+func _on_option_button_pressed() -> void:
+	language_option_button.add_item("Português")
+	language_option_button.add_item("English")
+
+	language_option_button.item_selected.connect(_on_language_selected)
+
+	# Define qual opção aparece selecionada
+	if TranslationServer.get_locale().begins_with("pt"):
+		language_option_button.select(0)
+	else:
+		language_option_button.select(1)
+
+
+func _on_language_selected(index: int) -> void:
+	if index == 0:
+		TranslationServer.set_locale("pt")
+	else:
+		TranslationServer.set_locale("en")

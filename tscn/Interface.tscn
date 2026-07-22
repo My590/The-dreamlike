@@ -252,9 +252,7 @@ offset_right = 553.0
 offset_bottom = 449.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 20
-text = "Languages:
-English
-Portuguese"
+text = "Languages:"
 
 [node name="Volume" type="Label" parent="PreferencesPanel" unique_id=173568900]
 layout_mode = 0
@@ -296,6 +294,13 @@ offset_bottom = 354.0
 theme_override_styles/slider = SubResource("StyleBoxFlat_owux1")
 value = 100.0
 
+[node name="OptionButton" type="OptionButton" parent="PreferencesPanel" unique_id=665695353]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 117.0
+offset_right = 373.0
+offset_bottom = 156.0
+
 [connection signal="pressed" from="Buttons/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Buttons/Load" to="." method="_on_load_pressed"]
 [connection signal="pressed" from="Buttons/Preferences" to="." method="_on_preferences_pressed"]
@@ -303,3 +308,4 @@ value = 100.0
 [connection signal="pressed" from="Buttons/Quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="AboutPanel/CloseButton" to="." method="_on_close_button_pressed"]
 [connection signal="pressed" from="PreferencesPanel/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="PreferencesPanel/OptionButton" to="." method="_on_option_button_pressed"]
