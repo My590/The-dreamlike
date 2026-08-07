@@ -1,5 +1,5 @@
-# Instructions
-It’s necessary to download Godot and the Dialogue Manager plugin in Godot from the Asset Store. I would recommend using the latest versions; I used Godot version 4.7 and Dialogue Manager v3.10.2. After that, make sure these files properly import the code. Regarding the graphical interface, there are some details about it in the code, but I can’t say for sure if importing them will make it work. 
+# A little about how I created
+if you want to use it as a reference on your computer it’s necessary to download Godot and the Dialogue Manager plugin in Godot from the Asset Store. I would recommend using the latest versions; I used Godot version 4.7 and Dialogue Manager v3.10.2. After that, make sure these files properly import the code. Regarding the graphical interface, there are some details about it in the code, but I can’t say for sure if importing them will make it work. 
 
 As for translation, it’s done within Dialogue Manager itself after installation and after finishing the dialogue. You click on “Translations” and you’ll have some options like “Generate line IDs for project.” This way, you get a base to translate into other languages. It’s not the only way, but I used CSV. After that, create a file with the same structure but a different name and change what’s written to the desired language. You can do this with Notepad (which is what I used), but you could also use something like Excel. After that, you’ll need to connect it through code in whichever way you prefer.
 
